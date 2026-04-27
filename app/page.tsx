@@ -440,37 +440,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── STATS ────────────────────────────────────────────── */}
-      <section style={{ background: "#F8F6F1" }} className="py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { value: "50+", label: "Integrasi Deployed" },
-              { value: "99.9%", label: "Uptime SLA" },
-              { value: "24/7", label: "Support" },
-              { value: "5+", label: "Tahun Pengalaman" },
-            ].map((stat, i) => (
-              <ScrollReveal key={stat.label} delay={i * 100}>
-                <div
-                  className="rounded-2xl p-6 md:p-8 text-center shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-0.5"
-                  style={{ background: "#1A1A2E" }}
-                >
-                  <div
-                    className="text-3xl md:text-4xl font-jakarta font-extrabold mb-2"
-                    style={{ color: "#7BA7A0" }}
-                  >
-                    {stat.value}
-                  </div>
-                  <div className="text-xs text-white/40 font-medium tracking-wide uppercase">
-                    {stat.label}
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── SERVICES ─────────────────────────────────────────── */}
       <section id="layanan" style={{ background: "#F8F6F1" }} className="py-24">
         <div className="max-w-7xl mx-auto px-6">
@@ -677,32 +646,6 @@ export default function Home() {
             </ScrollReveal>
           </div>
 
-          {/* Trust bar */}
-          <ScrollReveal delay={200}>
-            <div
-              className="mt-16 rounded-2xl p-8 flex flex-wrap items-center justify-center gap-8 md:gap-12"
-              style={{
-                background: "rgba(26,26,46,0.04)",
-                border: "1px solid rgba(26,26,46,0.06)",
-              }}
-            >
-              {["ISO 27001 Ready", "GDPR Compliant", "99.9% SLA", "SOC 2 Aligned", "BSSN Aware"].map(
-                (badge) => (
-                  <div key={badge} className="flex items-center gap-2">
-                    <div
-                      className="w-4 h-4 rounded-full flex items-center justify-center"
-                      style={{ background: "rgba(123,167,160,0.2)" }}
-                    >
-                      <svg className="w-2.5 h-2.5" viewBox="0 0 10 10" fill="none">
-                        <path d="M2 5l2 2 4-4" stroke="#7BA7A0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </div>
-                    <span className="text-sm font-medium text-obsidian/60 font-jakarta">{badge}</span>
-                  </div>
-                )
-              )}
-            </div>
-          </ScrollReveal>
         </div>
       </section>
 

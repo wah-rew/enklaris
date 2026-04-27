@@ -14,9 +14,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass shadow-sm py-3" : "py-5"
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4"
+      style={{ background: "rgba(26,26,46,0.92)", backdropFilter: "blur(16px)", borderBottom: scrolled ? "1px solid rgba(123,167,160,0.1)" : "none" }}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
@@ -29,7 +28,7 @@ export default function Navbar() {
           </span>
           <span
             className="text-2xl font-jakarta font-extrabold tracking-tight"
-            style={{ color: "#1A1A2E" }}
+            style={{ color: "#FFFFFF" }}
           >
             laris
           </span>
@@ -41,7 +40,7 @@ export default function Navbar() {
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="text-sm font-medium text-obsidian/70 hover:text-celadon transition-colors duration-200"
+              className="text-sm font-medium text-white/70 hover:text-celadon transition-colors duration-200"
             >
               {item}
             </a>
