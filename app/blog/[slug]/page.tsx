@@ -130,7 +130,7 @@ export default function BlogPostPage({ params }: Props) {
             Tertarik berdiskusi tentang solusi untuk bisnis Anda?
           </p>
           <Link
-            href="/#kontak"
+            href="/#kontak-form"
             className="inline-block px-8 py-3 rounded-full text-sm font-bold text-white transition-all duration-200 hover:scale-105 hover:shadow-lg"
             style={{ background: "linear-gradient(135deg, #7BA7A0, #4a8c84)" }}
           >

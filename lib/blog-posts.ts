@@ -49,7 +49,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Adopsi WhatsApp Business API bukan sekadar memasang nomor baru. Bisnis perlu memiliki: strategi konten untuk template message yang akan disetujui Meta, infrastruktur backend untuk integrasi API, dan proses onboarding agent yang jelas. Tanpa persiapan ini, implementasi bisa terhambat di tengah jalan.</p>
 
-<p>Jika Anda sedang mengevaluasi apakah WhatsApp Business API relevan untuk operasi bisnis Anda, kami senang mendiskusikan lebih lanjut. <a href="/#kontak">Hubungi tim Enklaris</a> untuk konsultasi awal tanpa komitmen.</p>`,
+<p>Jika Anda sedang mengevaluasi apakah WhatsApp Business API relevan untuk operasi bisnis Anda, kami senang mendiskusikan lebih lanjut. <a href="/#kontak-form">Hubungi tim Enklaris</a> untuk konsultasi awal tanpa komitmen.</p>`,
     category: "WhatsApp API",
     date: "2026-04-15",
     readTime: 4,
@@ -93,7 +93,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Banyak enterprise di Indonesia kini bergerak menuju arsitektur hybrid — chatbot untuk tier-1 yang terdefinisi, AI Agent untuk eskalasi dan skenario kompleks. Ini memberikan keseimbangan antara biaya, kecepatan implementasi, dan kualitas pengalaman pengguna.</p>
 
-<p>Apakah Anda sedang mengevaluasi strategi otomasi untuk bisnis Anda? <a href="/#kontak">Diskusikan kebutuhan Anda dengan tim kami</a> — kami senang membantu memetakan solusi yang tepat untuk konteks spesifik Anda.</p>`,
+<p>Apakah Anda sedang mengevaluasi strategi otomasi untuk bisnis Anda? <a href="/#kontak-form">Diskusikan kebutuhan Anda dengan tim kami</a> — kami senang membantu memetakan solusi yang tepat untuk konteks spesifik Anda.</p>`,
     category: "AI Agent",
     date: "2026-04-10",
     readTime: 5,
@@ -132,7 +132,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Jika Anda mengenali tiga atau lebih tanda di atas, ini saat yang tepat untuk melakukan database health assessment. Assessment yang baik tidak harus memakan waktu lama — dengan tooling yang tepat, gambaran komprehensif bisa didapat dalam beberapa hari.</p>
 
-<p>Tim Enklaris memiliki pengalaman dalam database optimization untuk skala enterprise maupun startup yang sedang tumbuh. Jika Anda ingin mendiskusikan kondisi database Anda, <a href="/#kontak">kami siap mendengarkan</a>.</p>`,
+<p>Tim Enklaris memiliki pengalaman dalam database optimization untuk skala enterprise maupun startup yang sedang tumbuh. Jika Anda ingin mendiskusikan kondisi database Anda, <a href="/#kontak-form">kami siap mendengarkan</a>.</p>`,
     category: "Database",
     date: "2026-04-05",
     readTime: 4,
@@ -180,7 +180,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Implementasi geo analytics tidak harus dimulai dari yang paling kompleks. Langkah awal yang paling sering memberikan value tercepat adalah: visualisasi performa toko dalam konteks spasial, dan korelasi sederhana antara karakteristik lokasi dengan metrik bisnis.</p>
 
-<p>Jika Anda ingin mengeksplorasi bagaimana geo analytics dapat diterapkan untuk jaringan retail atau distribusi Anda, <a href="/#kontak">tim Enklaris siap berdiskusi</a>.</p>`,
+<p>Jika Anda ingin mengeksplorasi bagaimana geo analytics dapat diterapkan untuk jaringan retail atau distribusi Anda, <a href="/#kontak-form">tim Enklaris siap berdiskusi</a>.</p>`,
     category: "Geo Analytics",
     date: "2026-03-28",
     readTime: 5,
@@ -226,7 +226,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li>Berapa lama typical timeline untuk proyek dengan scope serupa?</li>
 </ul>
 
-<p>Di Enklaris, kami percaya bahwa transparansi adalah fondasi dari hubungan kerja yang baik. Jika Anda sedang dalam proses evaluasi mitra teknologi, <a href="/#kontak">kami terbuka untuk berdiskusi</a> — termasuk tentang hal-hal yang tidak bisa kami bantu.</p>`,
+<p>Di Enklaris, kami percaya bahwa transparansi adalah fondasi dari hubungan kerja yang baik. Jika Anda sedang dalam proses evaluasi mitra teknologi, <a href="/#kontak-form">kami terbuka untuk berdiskusi</a> — termasuk tentang hal-hal yang tidak bisa kami bantu.</p>`,
     category: "Industry Insights",
     date: "2026-03-22",
     readTime: 5,
@@ -275,7 +275,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Implementasi yang berhasil memerlukan: mapping customer journey yang detail, integrasi data yang bersih, dan desain percakapan yang baik. Teknologinya sudah ada — yang membedakan hasil akhir adalah kualitas perencanaan di awal.</p>
 
-<p>Jika Anda ingin membahas bagaimana arsitektur ini bisa diterapkan untuk bisnis Anda, <a href="/#kontak">kami siap berdiskusi lebih lanjut</a>.</p>`,
+<p>Jika Anda ingin membahas bagaimana arsitektur ini bisa diterapkan untuk bisnis Anda, <a href="/#kontak-form">kami siap berdiskusi lebih lanjut</a>.</p>`,
     category: "WhatsApp API",
     date: "2026-03-18",
     readTime: 5,
@@ -324,7 +324,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Nilai geo intelligence bukan dari peta yang indah, tapi dari keputusan yang lebih baik yang dihasilkannya. Implementasi yang efektif selalu dimulai dari pertanyaan bisnis yang spesifik: di mana sebaiknya kami buka toko berikutnya? Wilayah mana yang memiliki potensi terbesar yang belum tersentuh? Bagaimana mengoptimalkan rute distribusi kami?</p>
 
-<p>Jika Anda sedang merencanakan ekspansi atau ingin mengoptimalkan jaringan yang ada, <a href="/#kontak">tim geo analytics Enklaris siap membantu</a> memetakan jalannya.</p>`,
+<p>Jika Anda sedang merencanakan ekspansi atau ingin mengoptimalkan jaringan yang ada, <a href="/#kontak-form">tim geo analytics Enklaris siap membantu</a> memetakan jalannya.</p>`,
     category: "Geo Analytics",
     date: "2026-03-12",
     readTime: 5,
@@ -384,7 +384,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Dari pengalaman mendampingi berbagai startup: underestimasi waktu yang dibutuhkan, tidak melakukan dry run di staging environment yang identical dengan produksi, dan tidak menyiapkan monitoring yang cukup pasca-migration adalah tiga kesalahan yang paling sering muncul.</p>
 
-<p>Migration yang baik bukan yang selesai paling cepat — tapi yang selesai tanpa insiden dan dengan data yang utuh. Jika Anda sedang merencanakan database migration, <a href="/#kontak">kami senang mendiskusikan pendekatan yang tepat untuk konteks Anda</a>.</p>`,
+<p>Migration yang baik bukan yang selesai paling cepat — tapi yang selesai tanpa insiden dan dengan data yang utuh. Jika Anda sedang merencanakan database migration, <a href="/#kontak-form">kami senang mendiskusikan pendekatan yang tepat untuk konteks Anda</a>.</p>`,
     category: "Database",
     date: "2026-03-05",
     readTime: 5,

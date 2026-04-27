@@ -271,7 +271,7 @@ function ServiceCard({ icon, tag, title, description, features, accentColor = "#
 
         <div className="mt-6 pt-5 border-t border-obsidian/5">
           <a
-            href="#kontak"
+            href="/#kontak-form"
             className="text-sm font-semibold flex items-center gap-1.5 transition-all duration-200 hover:gap-3"
             style={{ color: accentColor }}
           >
@@ -400,7 +400,7 @@ export default function Home() {
               style={{ animationDelay: "0.5s" }}
             >
               <a
-                href="#kontak"
+                href="/#kontak-form"
                 className="px-8 py-3.5 rounded-full font-semibold text-white transition-all duration-200 hover:scale-105 hover:shadow-glow flex items-center gap-2"
                 style={{
                   background: "linear-gradient(135deg, #C17F5A, #d4956f)",
@@ -647,73 +647,6 @@ export default function Home() {
             </ScrollReveal>
           </div>
 
-        </div>
-      </section>
-
-      {/* ── CTA ──────────────────────────────────────────────── */}
-      <section
-        id="kontak"
-        className="py-24 relative overflow-hidden"
-        style={{ background: "#1A1A2E" }}
-      >
-        {/* BG decoration */}
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(123,167,160,0.08) 0%, transparent 70%)",
-          }}
-        />
-        <div
-          className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-16"
-          style={{ background: "linear-gradient(to bottom, transparent, rgba(123,167,160,0.4))" }}
-        />
-
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <ScrollReveal>
-            <p
-              className="text-xs font-mono-accent font-medium tracking-widest uppercase mb-6"
-              style={{ color: "#7BA7A0" }}
-            >
-              Mulai Hari Ini
-            </p>
-            <h2 className="text-4xl md:text-5xl xl:text-6xl font-jakarta font-extrabold text-white mb-6 leading-tight">
-              Siap mengintegrasikan
-              <br />
-              <span style={{ color: "#7BA7A0" }}>intelligence</span> ke dalam
-              <br />
-              bisnis Anda?
-            </h2>
-            <p className="text-white/40 text-lg mb-10 leading-relaxed">
-              Konsultasi gratis. Tidak ada komitmen.
-            </p>
-
-            <div className="flex flex-wrap gap-4 justify-center">
-              <a
-                href="#kontak-form"
-                className="px-10 py-4 rounded-full font-bold text-white transition-all duration-200 hover:scale-105 hover:shadow-glow flex items-center gap-2.5"
-                style={{
-                  background: "linear-gradient(135deg, #C17F5A, #d4956f)",
-                  fontSize: "1rem",
-                }}
-              >
-                Schedule a Demo
-                <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none">
-                  <path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </a>
-            </div>
-
-            {/* Contact info */}
-            <div className="flex flex-wrap gap-6 justify-center mt-12 text-sm text-white/30">
-              <span className="flex items-center gap-2">
-                <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 2a4 4 0 100 8 4 4 0 000-8zm0 10c-4 0-6 1.34-6 2v1h12v-1c0-.66-2-2-6-2z" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-                </svg>
-                Jakarta, Indonesia
-              </span>
-            </div>
-          </ScrollReveal>
         </div>
       </section>
 

@@ -39,7 +39,7 @@ export default function Navbar() {
           {(["Layanan", "Tentang", "Kontak"] as string[]).map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={item === "Kontak" ? "/#kontak-form" : `#${item.toLowerCase()}`}
               className="text-sm font-medium text-white/70 hover:text-celadon transition-colors duration-200"
             >
               {item}
@@ -56,7 +56,7 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="#kontak"
+            href="/#kontak-form"
             className="px-5 py-2.5 rounded-full text-sm font-semibold text-white transition-all duration-200 hover:scale-105 hover:shadow-md"
             style={{ background: "linear-gradient(135deg, #C17F5A, #d4956f)" }}
           >
@@ -98,7 +98,7 @@ export default function Navbar() {
           {(["Layanan", "Tentang", "Kontak"] as string[]).map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={item === "Kontak" ? "/#kontak-form" : `#${item.toLowerCase()}`}
               className="text-sm font-medium text-obsidian/80 hover:text-celadon transition-colors"
               onClick={() => setMenuOpen(false)}
             >
@@ -113,7 +113,7 @@ export default function Navbar() {
             Blog
           </a>
           <a
-            href="#kontak"
+            href="/#kontak-form"
             className="px-5 py-2.5 rounded-full text-sm font-semibold text-white text-center transition-all duration-200"
             style={{ background: "linear-gradient(135deg, #C17F5A, #d4956f)" }}
             onClick={() => setMenuOpen(false)}
