@@ -81,7 +81,7 @@ export default function Footer() {
               Kontak
             </h4>
             <ul className="space-y-2.5">
-              {["hello@enklaris.id", "+62 21 XXXX XXXX"].map((item) => (
+              {["+62 21 XXXX XXXX"].map((item) => (
                 <li key={item}>
                   <span className="text-sm text-white/40">{item}</span>
                 </li>

@@ -1,6 +1,7 @@
 "use client";
 
 import ScrollReveal from "@/components/ScrollReveal";
+import ContactForm from "@/components/ContactForm";
 
 /* ─── SVG Icons ─────────────────────────────────────────── */
 
@@ -689,7 +690,7 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="mailto:hello@enklaris.id"
+                href="#kontak-form"
                 className="px-10 py-4 rounded-full font-bold text-white transition-all duration-200 hover:scale-105 hover:shadow-glow flex items-center gap-2.5"
                 style={{
                   background: "linear-gradient(135deg, #C17F5A, #d4956f)",
@@ -701,28 +702,10 @@ export default function Home() {
                   <path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </a>
-              <a
-                href="https://wa.me/6221XXXXXXXX"
-                className="px-10 py-4 rounded-full font-bold transition-all duration-200 hover:scale-105 flex items-center gap-2.5"
-                style={{
-                  background: "rgba(255,255,255,0.06)",
-                  border: "1.5px solid rgba(255,255,255,0.15)",
-                  color: "rgba(255,255,255,0.8)",
-                  fontSize: "1rem",
-                }}
-              >
-                WhatsApp Kami
-              </a>
             </div>
 
             {/* Contact info */}
             <div className="flex flex-wrap gap-6 justify-center mt-12 text-sm text-white/30">
-              <span className="flex items-center gap-2">
-                <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
-                  <path d="M2 4l6 5 6-5M2 4h12v9H2V4z" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                hello@enklaris.id
-              </span>
               <span className="flex items-center gap-2">
                 <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
                   <path d="M8 2a4 4 0 100 8 4 4 0 000-8zm0 10c-4 0-6 1.34-6 2v1h12v-1c0-.66-2-2-6-2z" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
@@ -731,6 +714,18 @@ export default function Home() {
               </span>
             </div>
           </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ── CONTACT FORM ─────────────────────────────────────── */}
+      <section id="kontak-form" style={{ background: "#F8F6F1" }} className="py-20">
+        <div className="max-w-2xl mx-auto px-6">
+          <div className="text-center mb-10">
+            <p className="text-xs font-mono-accent font-medium tracking-widest uppercase mb-3" style={{ color: "#7BA7A0" }}>Mulai Diskusi</p>
+            <h2 className="text-3xl font-jakarta font-extrabold text-obsidian mb-3">Ceritakan kebutuhan Anda</h2>
+            <p className="text-muted text-sm">Kami akan merespons dalam 1 hari kerja.</p>
+          </div>
+          <ContactForm />
         </div>
       </section>
     </>
