@@ -228,9 +228,10 @@ interface ServiceCardProps {
   description: string;
   features: string[];
   accentColor?: string;
+  href?: string;
 }
 
-function ServiceCard({ icon, tag, title, description, features, accentColor = "#7BA7A0" }: ServiceCardProps) {
+function ServiceCard({ icon, tag, title, description, features, accentColor = "#7BA7A0", href = "/#kontak-form" }: ServiceCardProps) {
   return (
     <div
       className="group relative bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-celadon/20 overflow-hidden"
@@ -271,7 +272,7 @@ function ServiceCard({ icon, tag, title, description, features, accentColor = "#
 
         <div className="mt-6 pt-5 border-t border-obsidian/5">
           <a
-            href="/#kontak-form"
+            href={href}
             className="text-sm font-semibold flex items-center gap-1.5 transition-all duration-200 hover:gap-3"
             style={{ color: accentColor }}
           >
@@ -472,6 +473,7 @@ export default function Home() {
                 description="Bangun customer journey otomatis via WhatsApp Business API. Template pesan terverifikasi, broadcast campaign, dan chatbot conversational."
                 features={["Template verified", "Broadcast campaign", "Analytics dashboard"]}
                 accentColor="#7BA7A0"
+                href="/layanan/whatsapp-api"
               />
             </ScrollReveal>
             <ScrollReveal delay={100}>
@@ -482,6 +484,7 @@ export default function Home() {
                 description="Bangun AI agent yang memahami konteks bisnis Anda. Dari customer service otomatis hingga internal workflow intelligence."
                 features={["Natural Language Processing", "Custom training", "Multi-channel"]}
                 accentColor="#C17F5A"
+                href="/layanan/ai-agent"
               />
             </ScrollReveal>
             <ScrollReveal delay={200}>
@@ -492,6 +495,7 @@ export default function Home() {
                 description="Design, migrasi, dan optimasi database untuk performa maksimal. PostgreSQL, MySQL, MongoDB, dan cloud-native solutions."
                 features={["Migration & design", "Query optimization", "24/7 monitoring"]}
                 accentColor="#7BA7A0"
+                href="/layanan/database"
               />
             </ScrollReveal>
             <ScrollReveal delay={300}>
@@ -502,6 +506,7 @@ export default function Home() {
                 description="Ubah data lokasi menjadi insight bisnis. Heat mapping, territory analysis, dan location-based intelligence untuk keputusan strategis."
                 features={["Heat mapping", "Territory analysis", "Reporting & BI"]}
                 accentColor="#D4C5B0"
+                href="/layanan/geo-analytics"
               />
             </ScrollReveal>
           </div>
