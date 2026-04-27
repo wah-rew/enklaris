@@ -36,7 +36,7 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
-          {["Layanan", "Tentang", "Blog", "Kontak"].map((item) => (
+          {(["Layanan", "Tentang", "Kontak"] as string[]).map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -45,6 +45,12 @@ export default function Navbar() {
               {item}
             </a>
           ))}
+          <a
+            href="/blog"
+            className="text-sm font-medium text-white/70 hover:text-celadon transition-colors duration-200"
+          >
+            Blog
+          </a>
         </div>
 
         {/* CTA */}
@@ -89,7 +95,7 @@ export default function Navbar() {
         }`}
       >
         <div className="glass px-6 py-4 flex flex-col gap-4 border-t border-celadon/10">
-          {["Layanan", "Tentang", "Blog", "Kontak"].map((item) => (
+          {(["Layanan", "Tentang", "Kontak"] as string[]).map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -99,6 +105,13 @@ export default function Navbar() {
               {item}
             </a>
           ))}
+          <a
+            href="/blog"
+            className="text-sm font-medium text-obsidian/80 hover:text-celadon transition-colors"
+            onClick={() => setMenuOpen(false)}
+          >
+            Blog
+          </a>
           <a
             href="#kontak"
             className="px-5 py-2.5 rounded-full text-sm font-semibold text-white text-center transition-all duration-200"
