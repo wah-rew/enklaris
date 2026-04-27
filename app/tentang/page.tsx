@@ -151,9 +151,10 @@ export default function TentangPage() {
                   <div>
                     <p className="font-jakarta font-bold text-obsidian mb-1">Kantor Pusat</p>
                     <p className="text-sm text-muted leading-relaxed">
-                      Jl. Kemang Raya No. 78<br />
-                      Kebayoran Baru, Jakarta Selatan<br />
-                      DKI Jakarta 12730<br />
+                      AD Premier Office Park<br />
+                      Jl. TB Simatupang No.5<br />
+                      Ragunan, Pasar Minggu<br />
+                      Jakarta Selatan 12550<br />
                       Indonesia
                     </p>
                   </div>
