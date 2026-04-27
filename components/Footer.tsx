@@ -66,13 +66,16 @@ export default function Footer() {
               Perusahaan
             </h4>
             <ul className="space-y-2.5 mb-8">
-              {["Tentang Kami", "Blog", "Karir", "Press"].map((item) => (
-                <li key={item}>
+              {[
+                { label: "Tentang Kami", href: "/tentang" },
+                { label: "Blog", href: "/blog" },
+              ].map((item) => (
+                <li key={item.label}>
                   <a
-                    href="#"
+                    href={item.href}
                     className="text-sm text-white/40 hover:text-celadon transition-colors duration-200"
                   >
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}
