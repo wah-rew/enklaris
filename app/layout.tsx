@@ -27,6 +27,10 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Enklaris — Clarity through Connection",
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/favicon.svg',
+  },
   description:
     "Platform integrasi cerdas: WhatsApp Business API, AI Agent, Database Management, dan Geo Location Analysis untuk bisnis modern Indonesia.",
   keywords: [
