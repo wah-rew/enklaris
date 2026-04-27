@@ -262,6 +262,253 @@ export default function WhatsAppAPIPage() {
         </div>
       </section>
 
+      {/* MESSAGE CATEGORIES */}
+      <section style={{ background: "#F8F6F1" }} className="py-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <p className="text-xs font-mono font-medium tracking-widest uppercase mb-4" style={{ color: "#7BA7A0" }}>
+                Kategori Pesan
+              </p>
+              <h2 className="text-4xl md:text-5xl font-jakarta font-extrabold text-obsidian mb-4">
+                Kategori Pesan yang<br />
+                <span style={{ color: "#7BA7A0" }}>Bisa Dikirim</span>
+              </h2>
+              <p className="text-muted max-w-2xl mx-auto leading-relaxed">
+                Meta mengkategorikan pesan WhatsApp Business API ke dalam 4 kategori utama, masing-masing dengan aturan dan kemampuan berbeda.
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Marketing */}
+            <ScrollReveal delay={0}>
+              <div
+                className="bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1"
+                style={{ borderLeft: "4px solid #7BA7A0", border: "1px solid rgba(123,167,160,0.15)", borderLeftWidth: "4px", borderLeftColor: "#7BA7A0" }}
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "rgba(123,167,160,0.1)" }}>
+                    <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none">
+                      <path d="M3 11l19-9-9 19-2-8-8-2z" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-jakarta font-bold text-obsidian text-xl">Marketing</h3>
+                    <p className="text-sm text-muted">Promosi produk, layanan, atau bisnis Anda</p>
+                  </div>
+                </div>
+                <ul className="space-y-2">
+                  {["Flash sale, diskon, launching produk baru", "Re-engagement campaign untuk pelanggan lama", "Upsell & cross-sell yang dipersonalisasi", "Program loyalitas dan reward", "Promosi musiman & event khusus"].map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-obsidian/70">
+                      <span className="mt-0.5 w-4 h-4 flex-shrink-0" style={{ color: "#7BA7A0" }}>
+                        <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                      </span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </ScrollReveal>
+
+            {/* Authentication */}
+            <ScrollReveal delay={100}>
+              <div
+                className="bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1"
+                style={{ border: "1px solid rgba(123,167,160,0.15)", borderLeftWidth: "4px", borderLeftColor: "#7BA7A0" }}
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "rgba(123,167,160,0.1)" }}>
+                    <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none">
+                      <path d="M12 2L4 6v6c0 5.25 3.5 10.14 8 11.35C16.5 22.14 20 17.25 20 12V6l-8-4z" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M9 12l2 2 4-4" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-jakarta font-bold text-obsidian text-xl">Authentication</h3>
+                    <p className="text-sm text-muted">Verifikasi identitas pengguna dengan aman</p>
+                  </div>
+                </div>
+                <ul className="space-y-2">
+                  {["One-time passwords (OTP)", "Verifikasi akun baru", "Login 2-factor authentication", "Konfirmasi perubahan password", "Verifikasi transaksi finansial"].map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-obsidian/70">
+                      <span className="mt-0.5 w-4 h-4 flex-shrink-0">
+                        <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                      </span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </ScrollReveal>
+
+            {/* Utility */}
+            <ScrollReveal delay={200}>
+              <div
+                className="bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1"
+                style={{ border: "1px solid rgba(123,167,160,0.15)", borderLeftWidth: "4px", borderLeftColor: "#7BA7A0" }}
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "rgba(123,167,160,0.1)" }}>
+                    <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none">
+                      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M13.73 21a2 2 0 0 1-3.46 0" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-jakarta font-bold text-obsidian text-xl">Utility</h3>
+                    <p className="text-sm text-muted">Notifikasi transaksional dan operasional</p>
+                  </div>
+                </div>
+                <ul className="space-y-2">
+                  {["Konfirmasi pesanan dan pembayaran", "Update status pengiriman (tracking)", "Reminder jadwal dan appointment", "Notifikasi perubahan akun", "Invoice dan receipt digital"].map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-obsidian/70">
+                      <span className="mt-0.5 w-4 h-4 flex-shrink-0">
+                        <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                      </span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </ScrollReveal>
+
+            {/* Service */}
+            <ScrollReveal delay={300}>
+              <div
+                className="bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1"
+                style={{ border: "1px solid rgba(123,167,160,0.15)", borderLeftWidth: "4px", borderLeftColor: "#7BA7A0" }}
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "rgba(123,167,160,0.1)" }}>
+                    <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                      <circle cx="9" cy="10" r="1" fill="#7BA7A0" />
+                      <circle cx="12" cy="10" r="1" fill="#7BA7A0" />
+                      <circle cx="15" cy="10" r="1" fill="#7BA7A0" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-jakarta font-bold text-obsidian text-xl">Service</h3>
+                    <p className="text-sm text-muted">Layanan pelanggan berbasis percakapan</p>
+                  </div>
+                </div>
+                <ul className="space-y-2">
+                  {["Respons customer service (in-bound)", "Jawaban pertanyaan pelanggan", "Penanganan komplain dan eskalasi", "Komunikasi pasca transaksi", "Support teknis real-time"].map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-obsidian/70">
+                      <span className="mt-0.5 w-4 h-4 flex-shrink-0">
+                        <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                      </span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* USE CASES BY INDUSTRY */}
+      <section style={{ background: "#F8F6F1" }} className="py-24 border-t border-obsidian/5">
+        <div className="max-w-7xl mx-auto px-6">
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <p className="text-xs font-mono font-medium tracking-widest uppercase mb-4" style={{ color: "#7BA7A0" }}>
+                Per Industri
+              </p>
+              <h2 className="text-4xl md:text-5xl font-jakarta font-extrabold text-obsidian mb-4">
+                Solusi Nyata untuk<br />
+                <span style={{ color: "#7BA7A0" }}>Setiap Sektor</span>
+              </h2>
+              <p className="text-muted max-w-xl mx-auto leading-relaxed">
+                Dari retail hingga pendidikan — WhatsApp Business API memberikan dampak nyata di setiap industri.
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <div className="space-y-4">
+            {[
+              {
+                icon: (
+                  <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none">
+                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M16 10a4 4 0 01-8 0" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                ),
+                title: "E-commerce & Retail",
+                points: ["Konfirmasi order otomatis", "Update status pengiriman real-time", "Abandoned cart recovery campaign", "Flash sale & promo notifications"],
+              },
+              {
+                icon: (
+                  <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none">
+                    <rect x="2" y="5" width="20" height="14" rx="2" stroke="#7BA7A0" strokeWidth="1.8" />
+                    <path d="M2 10h20" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" />
+                  </svg>
+                ),
+                title: "Banking & Finance",
+                points: ["OTP & autentikasi transaksi", "Peringatan aktivitas mencurigakan", "Notifikasi mutasi rekening", "Update status pengajuan kredit"],
+              },
+              {
+                icon: (
+                  <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none">
+                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                ),
+                title: "Healthcare",
+                points: ["Reminder jadwal dokter & konsultasi", "Notifikasi hasil lab dan diagnosis", "Pengingat konsumsi obat", "Follow-up pasca teleconsultation"],
+              },
+              {
+                icon: (
+                  <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none">
+                    <rect x="1" y="3" width="15" height="13" rx="2" stroke="#7BA7A0" strokeWidth="1.8" />
+                    <path d="M16 8h4l3 5v3h-7V8z" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    <circle cx="5.5" cy="18.5" r="2.5" stroke="#7BA7A0" strokeWidth="1.8" />
+                    <circle cx="18.5" cy="18.5" r="2.5" stroke="#7BA7A0" strokeWidth="1.8" />
+                  </svg>
+                ),
+                title: "Logistics",
+                points: ["Tracking pengiriman real-time", "Notifikasi penugasan driver", "Konfirmasi bukti pengiriman (POD)", "Alert keterlambatan & perubahan rute"],
+              },
+              {
+                icon: (
+                  <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M6 12v5c3.33 2 8.67 2 12 0v-5" stroke="#7BA7A0" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                ),
+                title: "Education",
+                points: ["Jadwal kelas & perubahan jadwal", "Pengingat tugas dan deadline", "Pengumuman hasil ujian", "Reminder pembayaran SPP & biaya"],
+              },
+            ].map(({ icon, title, points }, idx) => (
+              <ScrollReveal key={title} delay={idx * 80}>
+                <div
+                  className="bg-white rounded-2xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300"
+                  style={{ border: "1px solid rgba(123,167,160,0.12)" }}
+                >
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                    <div className="flex items-center gap-4 sm:w-64 flex-shrink-0">
+                      <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "rgba(123,167,160,0.1)" }}>
+                        {icon}
+                      </div>
+                      <h3 className="font-jakarta font-bold text-obsidian text-lg">{title}</h3>
+                    </div>
+                    <div className="flex flex-wrap gap-x-6 gap-y-1">
+                      {points.map((pt) => (
+                        <span key={pt} className="flex items-center gap-1.5 text-sm text-obsidian/65">
+                          <svg viewBox="0 0 8 8" className="w-2 h-2 flex-shrink-0"><circle cx="4" cy="4" r="3" fill="#7BA7A0" /></svg>
+                          {pt}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* HOW IT WORKS */}
       <section style={{ background: "#0F0F1E" }} className="py-24">
         <div className="max-w-7xl mx-auto px-6">
