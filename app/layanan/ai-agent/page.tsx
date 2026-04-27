@@ -288,50 +288,7 @@ export default function AIAgentPage() {
             </div>
           </ScrollReveal>
 
-          {/* Ecosystem reference */}
-          <ScrollReveal delay={200}>
-            <div
-              className="rounded-2xl p-8"
-              style={{
-                background: "rgba(193,127,90,0.05)",
-                border: "1px solid rgba(193,127,90,0.15)",
-              }}
-            >
-              <p className="text-xs font-mono text-white/30 tracking-wider uppercase mb-6">AI Ecosystem Partners Indonesia</p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex items-start gap-4">
-                  <div
-                    className="w-12 h-12 rounded-xl flex-shrink-0 flex items-center justify-center"
-                    style={{ background: "rgba(123,167,160,0.1)", border: "1px solid rgba(123,167,160,0.2)" }}
-                  >
-                    <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none">
-                      <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="#7BA7A0" strokeWidth="1.5" strokeLinejoin="round" />
-                      <path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="#7BA7A0" strokeWidth="1.5" strokeLinejoin="round" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="font-jakarta font-bold text-white mb-1">Kata.ai</p>
-                    <p className="text-xs text-white/40 leading-relaxed">Platform NLP terdepan di Indonesia — integrasi untuk pemahaman Bahasa Indonesia yang superior, intent recognition, dan entity extraction.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div
-                    className="w-12 h-12 rounded-xl flex-shrink-0 flex items-center justify-center"
-                    style={{ background: "rgba(193,127,90,0.1)", border: "1px solid rgba(193,127,90,0.2)" }}
-                  >
-                    <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none">
-                      <circle cx="12" cy="12" r="4" stroke="#C17F5A" strokeWidth="1.5" />
-                      <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="#C17F5A" strokeWidth="1.5" strokeLinecap="round" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="font-jakarta font-bold text-white mb-1">Feedloop.ai</p>
-                    <p className="text-xs text-white/40 leading-relaxed">AI platform Indonesia yang fokus pada enterprise AI deployment — kolaborasi untuk solusi yang sesuai dengan regulasi data lokal.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </ScrollReveal>
+
         </div>
       </section>
 

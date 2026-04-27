@@ -337,33 +337,7 @@ export default function GeoAnalyticsPage() {
                 </div>
               </ScrollReveal>
 
-              <ScrollReveal delay={200}>
-                <div
-                  className="rounded-2xl p-6"
-                  style={{
-                    background: "rgba(212,197,176,0.04)",
-                    border: "1px solid rgba(212,197,176,0.12)",
-                  }}
-                >
-                  <p className="text-xs font-mono text-white/30 tracking-wider uppercase mb-5">Ecosystem Partner</p>
-                  <div className="flex items-start gap-4">
-                    <div
-                      className="w-12 h-12 rounded-xl flex-shrink-0 flex items-center justify-center"
-                      style={{ background: "rgba(212,197,176,0.08)", border: "1px solid rgba(212,197,176,0.15)" }}
-                    >
-                      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none">
-                        <circle cx="12" cy="10" r="4" stroke="#D4C5B0" strokeWidth="1.5" />
-                        <path d="M12 14v8M8 22h8" stroke="#D4C5B0" strokeWidth="1.5" strokeLinecap="round" />
-                        <path d="M5 10C5 6.13 8.13 3 12 3s7 3.13 7 7c0 4-7 12-7 12S5 14 5 10z" stroke="#D4C5B0" strokeWidth="1.5" fill="none" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-jakarta font-bold text-white mb-1">Perare.io</p>
-                      <p className="text-xs text-white/40 leading-relaxed">Platform geo-analytics Indonesia yang spesialis dalam spatial data infrastructure — kolaborasi untuk solusi location intelligence skala enterprise yang sesuai dengan konteks bisnis lokal.</p>
-                    </div>
-                  </div>
-                </div>
-              </ScrollReveal>
+
             </div>
           </div>
         </div>

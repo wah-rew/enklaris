@@ -298,7 +298,7 @@ export default function WhatsAppAPIPage() {
                           <path d="M8 12h8M12 8v8" stroke="#7BA7A0" strokeWidth="1.5" strokeLinecap="round" />
                         </svg>
                       </div>
-                      <span className="text-xs text-white/40">Kata.ai NLP</span>
+                      <span className="text-xs text-white/40">NLP Engine</span>
                     </div>
                     <div className="text-center">
                       <div
