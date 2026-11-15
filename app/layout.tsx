@@ -1,24 +1,25 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Inter, JetBrains_Mono } from "next/font/google";
+import { Newsreader, DM_Sans, DM_Mono } from "next/font/google";
 import "./globals.css";
+import "./enklaris.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const plusJakartaSans = Plus_Jakarta_Sans({
+const display = Newsreader({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-jakarta",
+  weight: ["400", "500"],
+  variable: "--font-display",
   display: "swap",
 });
 
-const inter = Inter({
+const sans = DM_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  variable: "--font-inter",
+  weight: ["400", "500", "700"],
+  variable: "--font-sans",
   display: "swap",
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const mono = DM_Mono({
   subsets: ["latin"],
   weight: ["400", "500"],
   variable: "--font-mono",
@@ -26,17 +27,18 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Enklaris — Clarity through Connection",
+  title: "Enklaris — Mitra implementasi AI dan data",
   icons: {
     icon: '/icon.svg',
     shortcut: '/favicon.svg',
   },
   description:
-    "Platform integrasi cerdas: WhatsApp Business API, AI Agent, Database Management, dan Geo Location Analysis untuk bisnis modern Indonesia.",
+    "Enklaris merancang, memasang, dan menjalankan agent AI percakapan, akuisisi nasabah berbasis consent, dan analitik lahan untuk perusahaan di Indonesia.",
   keywords: [
     "WhatsApp Business API Indonesia",
     "AI Agent Development",
-    "Database Management",
+    "akuisisi nasabah berbasis consent",
+    "UU PDP telemarketing",
     "Geo Location Analysis",
     "system integrator Indonesia",
     "B2B tech integration",
@@ -44,18 +46,18 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Enklaris", url: "https://enklaris.id" }],
   openGraph: {
-    title: "Enklaris — Clarity through Connection",
+    title: "Enklaris — Mitra implementasi AI dan data",
     description:
-      "Platform integrasi cerdas untuk bisnis modern Indonesia. WhatsApp API, AI Agent, Database, dan Geo Analytics dalam satu ekosistem.",
+      "Agent AI percakapan, akuisisi nasabah berbasis consent, dan analitik lahan, dijalankan bersama mitra teknologi.",
     type: "website",
     locale: "id_ID",
     siteName: "Enklaris",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Enklaris — Clarity through Connection",
+    title: "Enklaris — Mitra implementasi AI dan data",
     description:
-      "Platform integrasi cerdas untuk bisnis modern Indonesia.",
+      "Mitra implementasi AI dan data untuk perusahaan di Indonesia.",
   },
   robots: {
     index: true,
@@ -71,7 +73,7 @@ export default function RootLayout({
   return (
     <html lang="id" className="scroll-smooth">
       <body
-        className={`antialiased ${plusJakartaSans.variable} ${inter.variable} ${jetbrainsMono.variable}`}
+        className={`antialiased ${display.variable} ${sans.variable} ${mono.variable}`}
       >
         <Navbar />
         <main>{children}</main>

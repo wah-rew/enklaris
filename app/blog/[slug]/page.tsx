@@ -30,8 +30,8 @@ function formatDate(dateStr: string) {
 
 const CATEGORY_COLORS: Record<string, string> = {
   "WhatsApp API": "#25D366",
-  "AI Agent": "#7BA7A0",
-  "Database": "#C17F5A",
+  "AI Agent": "#8E6BB0",
+  "Akuisisi Nasabah": "#6B3F8F",
   "Geo Analytics": "#6B7280",
   "Industry Insights": "#8B5CF6",
 };
@@ -52,7 +52,7 @@ export default function BlogPostPage({ params }: Props) {
 
   return (
     <main
-      style={{ background: "#F8F6F1", minHeight: "100vh" }}
+      style={{ background: "#FBFAFD", minHeight: "100vh" }}
       className="pt-24 pb-24"
     >
       {/* Back button */}
@@ -60,7 +60,7 @@ export default function BlogPostPage({ params }: Props) {
         <Link
           href="/blog"
           className="inline-flex items-center gap-2 text-sm font-medium transition-colors hover:opacity-70"
-          style={{ color: "#7BA7A0" }}
+          style={{ color: "#8E6BB0" }}
         >
           ← Kembali ke Blog
         </Link>
@@ -74,16 +74,16 @@ export default function BlogPostPage({ params }: Props) {
             className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide mb-5"
             style={{
               background:
-                (CATEGORY_COLORS[post.category] || "#7BA7A0") + "18",
-              color: CATEGORY_COLORS[post.category] || "#7BA7A0",
-              border: `1px solid ${(CATEGORY_COLORS[post.category] || "#7BA7A0")}40`,
+                (CATEGORY_COLORS[post.category] || "#8E6BB0") + "18",
+              color: CATEGORY_COLORS[post.category] || "#8E6BB0",
+              border: `1px solid ${(CATEGORY_COLORS[post.category] || "#8E6BB0")}40`,
             }}
           >
             {post.category}
           </span>
           <h1
             className="text-3xl md:text-4xl font-extrabold leading-tight mb-6"
-            style={{ color: "#1A1A2E" }}
+            style={{ color: "#2A1638" }}
           >
             {post.title}
           </h1>
@@ -97,7 +97,7 @@ export default function BlogPostPage({ params }: Props) {
           </div>
           <div
             className="mt-6 border-t"
-            style={{ borderColor: "rgba(26,26,46,0.1)" }}
+            style={{ borderColor: "rgba(42,22,56,0.1)" }}
           />
         </header>
 
@@ -115,11 +115,11 @@ export default function BlogPostPage({ params }: Props) {
         {/* CTA */}
         <div
           className="mt-16 rounded-2xl p-8 text-center"
-          style={{ background: "#1A1A2E" }}
+          style={{ background: "#2A1638" }}
         >
           <p
             className="text-sm font-semibold uppercase tracking-widest mb-3"
-            style={{ color: "#7BA7A0" }}
+            style={{ color: "#8E6BB0" }}
           >
             Diskusikan Bersama Kami
           </p>
@@ -132,7 +132,7 @@ export default function BlogPostPage({ params }: Props) {
           <Link
             href="/#kontak-form"
             className="inline-block px-8 py-3 rounded-full text-sm font-bold text-white transition-all duration-200 hover:scale-105 hover:shadow-lg"
-            style={{ background: "linear-gradient(135deg, #7BA7A0, #4a8c84)" }}
+            style={{ background: "linear-gradient(135deg, #8E6BB0, #55306F)" }}
           >
             Hubungi Kami →
           </Link>
@@ -144,7 +144,7 @@ export default function BlogPostPage({ params }: Props) {
         <section className="max-w-3xl mx-auto px-6 mt-20">
           <h2
             className="text-xl font-bold mb-8"
-            style={{ color: "#1A1A2E" }}
+            style={{ color: "#2A1638" }}
           >
             Artikel Lainnya
           </h2>
@@ -156,26 +156,26 @@ export default function BlogPostPage({ params }: Props) {
                 className="group block rounded-xl overflow-hidden transition-all duration-200 hover:-translate-y-0.5"
                 style={{
                   background: "#FFFFFF",
-                  boxShadow: "0 2px 12px rgba(26,26,46,0.07)",
+                  boxShadow: "0 2px 12px rgba(42,22,56,0.07)",
                 }}
               >
                 <div
                   className="h-1"
                   style={{
                     background:
-                      CATEGORY_COLORS[related.category] || "#7BA7A0",
+                      CATEGORY_COLORS[related.category] || "#8E6BB0",
                   }}
                 />
                 <div className="p-5">
                   <span
                     className="text-xs font-bold uppercase tracking-wide"
-                    style={{ color: CATEGORY_COLORS[related.category] || "#7BA7A0" }}
+                    style={{ color: CATEGORY_COLORS[related.category] || "#8E6BB0" }}
                   >
                     {related.category}
                   </span>
                   <p
                     className="text-sm font-semibold mt-2 leading-snug line-clamp-2 group-hover:opacity-70 transition-opacity"
-                    style={{ color: "#1A1A2E" }}
+                    style={{ color: "#2A1638" }}
                   >
                     {related.title}
                   </p>

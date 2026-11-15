@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --color-obsidian: #1A1A2E;
-  --color-celadon: #7BA7A0;
-  --color-ivory: #D4C5B0;
-  --color-cream: #F8F6F1;
-  --color-dark-bg: #0F0F1E;
-  --color-sienna: #C17F5A;
-  --color-text: #1A1A2E;
-  --color-muted: #6B7280;
+  --color-obsidian: #2A1638;
+  --color-celadon: #8E6BB0;
+  --color-ivory: #D9CFE4;
+  --color-cream: #FBFAFD;
+  --color-dark-bg: #1A0E23;
+  --color-sienna: #6B3F8F;
+  --color-text: #2A1638;
+  --color-muted: #6F6778;
 }
 
 * {
@@ -24,7 +24,7 @@ html {
 body {
   background-color: var(--color-cream);
   color: var(--color-text);
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-sans), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -32,12 +32,17 @@ body {
 /* ─── Typography ─────────────────────────────────────────── */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-jakarta), sans-serif;
-  font-weight: 800;
+  font-family: var(--font-display), Georgia, serif;
+}
+
+/* Display serif reads best at medium weight; overrides legacy font-extrabold utilities on headings */
+h1, h2, h3 {
+  font-weight: 500 !important;
+  letter-spacing: -0.02em;
 }
 
 .font-jakarta {
-  font-family: var(--font-jakarta), sans-serif;
+  font-family: var(--font-display), sans-serif;
 }
 
 .font-mono-accent {
@@ -157,23 +162,23 @@ h1, h2, h3, h4, h5, h6 {
 /* ─── Glassmorphism ──────────────────────────────────────── */
 
 .glass {
-  background: rgba(248, 246, 241, 0.75);
+  background: rgba(251,250,253, 0.75);
   backdrop-filter: blur(20px) saturate(1.8);
   -webkit-backdrop-filter: blur(20px) saturate(1.8);
-  border-bottom: 1px solid rgba(123, 167, 160, 0.2);
+  border-bottom: 1px solid rgba(142,107,176, 0.2);
 }
 
 .glass-dark {
-  background: rgba(15, 15, 30, 0.8);
+  background: rgba(26,14,35, 0.8);
   backdrop-filter: blur(20px) saturate(1.5);
   -webkit-backdrop-filter: blur(20px) saturate(1.5);
-  border-bottom: 1px solid rgba(123, 167, 160, 0.15);
+  border-bottom: 1px solid rgba(142,107,176, 0.15);
 }
 
 /* ─── Gradient text ──────────────────────────────────────── */
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--color-celadon), #a8d5cf);
+  background: linear-gradient(135deg, var(--color-celadon), #CDB8E6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -188,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ─── Selection ──────────────────────────────────────────── */
 
 ::selection {
-  background: rgba(123, 167, 160, 0.3);
+  background: rgba(142,107,176, 0.3);
   color: var(--color-obsidian);
 }
 
@@ -197,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
 .prose-article h2 {
   font-size: 1.375rem;
   font-weight: 700;
-  color: #1A1A2E;
+  color: #2A1638;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   line-height: 1.35;
@@ -206,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 .prose-article h3 {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #1A1A2E;
+  color: #2A1638;
   margin-top: 2rem;
   margin-bottom: 0.75rem;
 }
@@ -231,11 +236,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .prose-article strong {
   font-weight: 600;
-  color: #1A1A2E;
+  color: #2A1638;
 }
 
 .prose-article a {
-  color: #7BA7A0;
+  color: #8E6BB0;
   text-decoration: underline;
   text-underline-offset: 3px;
 }

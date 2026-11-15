@@ -1,21 +1,19 @@
 export default function Footer() {
   return (
-    <footer style={{ background: "#1A1A2E" }} className="text-white">
+    <footer style={{ background: "#2A1638" }} className="text-white">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center mb-4">
-              <span className="text-2xl font-jakarta font-extrabold" style={{ color: "#7BA7A0" }}>
-                enk
-              </span>
-              <span className="text-2xl font-jakarta font-extrabold text-white">laris</span>
+            <div className="flex items-center gap-2 mb-4 text-2xl font-display text-white">
+              <span className="w-2.5 h-2.5 rounded-full bg-citron" aria-hidden="true" />
+              enklaris
             </div>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs font-mono-accent tracking-wide">
-              Clarity through Connection
+              Mitra implementasi AI dan data
             </p>
             <p className="text-white/40 text-sm mt-3 leading-relaxed max-w-xs">
-              Platform integrasi cerdas untuk bisnis modern Indonesia.
+              Bekerja bersama Kata.ai, Compnet, dan Perare.
             </p>
           </div>
 
@@ -26,17 +24,17 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {[
-                "WhatsApp Business API",
-                "AI Agent Development",
-                "Database Management",
-                "Geo Location Analysis",
+                { label: "Agent dan chatbot AI", href: "/layanan/ai-agent" },
+                { label: "Akuisisi berbasis consent", href: "/layanan/akuisisi-consent" },
+                { label: "Penilaian lahan dan properti", href: "/layanan/geo-analytics" },
+                { label: "WhatsApp Business API", href: "/layanan/whatsapp-api" },
               ].map((item) => (
-                <li key={item}>
+                <li key={item.label}>
                   <a
-                    href="#layanan"
-                    className="text-sm text-white/40 hover:text-celadon transition-colors duration-200"
+                    href={item.href}
+                    className="text-sm text-white/40 hover:text-citron transition-colors duration-200"
                   >
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -56,7 +54,7 @@ export default function Footer() {
                 <li key={item.label}>
                   <a
                     href={item.href}
-                    className="text-sm text-white/40 hover:text-celadon transition-colors duration-200"
+                    className="text-sm text-white/40 hover:text-citron transition-colors duration-200"
                   >
                     {item.label}
                   </a>
@@ -72,7 +70,7 @@ export default function Footer() {
             © 2026 Enklaris. All rights reserved.
           </p>
           <div className="flex items-center gap-2 text-sm text-white/30">
-            <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#7BA7A0" }} />
+            <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#D4E157" }} />
             Jakarta Selatan, Indonesia
           </div>
         </div>

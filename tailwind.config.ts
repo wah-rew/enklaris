@@ -9,17 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        obsidian: "#1A1A2E",
-        celadon: "#7BA7A0",
-        ivory: "#D4C5B0",
-        cream: "#F8F6F1",
-        darkbg: "#0F0F1E",
-        sienna: "#C17F5A",
-        muted: "#6B7280",
+        obsidian: "#2A1638",
+        celadon: "#8E6BB0",
+        ivory: "#D9CFE4",
+        cream: "#FBFAFD",
+        darkbg: "#1A0E23",
+        sienna: "#6B3F8F",
+        muted: "#6F6778",
+        aubergine: "#3A1F4D",
+        citron: "#D4E157",
+        lilac: "#CDB8E6",
       },
       fontFamily: {
-        jakarta: ["var(--font-jakarta)", "sans-serif"],
-        inter: ["var(--font-inter)", "sans-serif"],
+        // "jakarta" and "inter" are legacy class names kept so existing pages keep working
+        jakarta: ["var(--font-display)", "Georgia", "serif"],
+        inter: ["var(--font-sans)", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "Georgia", "serif"],
         mono: ["var(--font-mono)", "monospace"],
       },
       animation: {
@@ -51,14 +56,14 @@ const config: Config = {
         },
       },
       boxShadow: {
-        card: "0 4px 24px rgba(26, 26, 46, 0.08)",
-        "card-hover": "0 8px 40px rgba(26, 26, 46, 0.14)",
-        glow: "0 0 40px rgba(123, 167, 160, 0.25)",
+        card: "0 4px 24px rgba(42,22,56, 0.08)",
+        "card-hover": "0 8px 40px rgba(42,22,56, 0.14)",
+        glow: "0 0 40px rgba(142,107,176, 0.25)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-celadon":
-          "linear-gradient(135deg, #7BA7A0 0%, #a8d5cf 100%)",
+          "linear-gradient(135deg, #8E6BB0 0%, #CDB8E6 100%)",
       },
     },
   },

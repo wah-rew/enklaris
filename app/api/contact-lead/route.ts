@@ -54,7 +54,7 @@ export async function POST(req: NextRequest) {
         to: ["wahyu@karyaselaksamakna.com"],
         subject: `🔔 Lead baru dari Enklaris — ${nama}`,
         html: `
-          <h2 style="font-family: sans-serif; color: #1A1A2E;">Lead baru dari website Enklaris</h2>
+          <h2 style="font-family: sans-serif; color: #2A1638;">Lead baru dari website Enklaris</h2>
           <table style="font-family: sans-serif; font-size: 14px; border-collapse: collapse;">
             <tr><td style="padding: 6px 16px 6px 0; color: #666;"><b>Nama:</b></td><td style="padding: 6px 0;">${nama}</td></tr>
             <tr><td style="padding: 6px 16px 6px 0; color: #666;"><b>Email:</b></td><td style="padding: 6px 0;">${email}</td></tr>

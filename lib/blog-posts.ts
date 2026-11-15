@@ -11,6 +11,98 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "telemarketing-setelah-uu-pdp-menelepon-hanya-yang-sudah-setuju",
+    title: "Telemarketing Setelah UU PDP: Menelepon Hanya yang Sudah Setuju",
+    excerpt:
+      "UU Pelindungan Data Pribadi mengubah cara perusahaan boleh menghubungi calon nasabah. Model berbasis consent membuat tim telemarketing tetap produktif tanpa menambah risiko hukum.",
+    category: "Akuisisi Nasabah",
+    date: "2026-11-15",
+    readTime: 4,
+    featured: true,
+    content: `<p>Selama bertahun-tahun, telemarketing berjalan dengan pola yang sama: beli daftar nomor, telepon satu per satu, dan berharap sebagian kecil mau mendengarkan. Pola ini makin sulit dipertahankan, baik dari sisi biaya maupun dari sisi hukum.</p>
+
+<h2>Apa yang berubah dengan UU PDP</h2>
+
+<p>UU Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi mewajibkan pemrosesan data pribadi punya dasar yang sah, dan salah satu dasar utamanya adalah persetujuan yang eksplisit dari pemilik data. Pelanggaran dapat dikenai sanksi administratif, termasuk denda paling tinggi 2 persen dari pendapatan tahunan.</p>
+
+<p>Bagi perusahaan yang mengandalkan daftar nomor dari pihak ketiga, pertanyaannya sederhana: apakah setiap orang di daftar itu pernah setuju dihubungi untuk penawaran ini?</p>
+
+<h2>Model berbasis consent</h2>
+
+<p>Dalam model berbasis consent, urutannya dibalik. Persetujuan diminta lebih dulu, baru kemudian agen menelepon.</p>
+
+<ul>
+  <li><strong>Saring</strong>: profil yang sesuai target disaring sebelum ada pesan yang dikirim.</li>
+  <li><strong>Tawarkan</strong>: penawaran dikirim lewat WhatsApp resmi yang terverifikasi. Penerima memilih sendiri dengan menekan tombol tertarik.</li>
+  <li><strong>Serahkan</strong>: hanya nomor yang sudah memberi persetujuan yang diteruskan ke tim telemarketing.</li>
+</ul>
+
+<h2>Dampaknya untuk tim</h2>
+
+<p>Agen tidak lagi menghabiskan jam kerja untuk nomor mati dan penolakan. Setiap panggilan ditujukan kepada orang yang memang menunggu penjelasan. Persetujuan tercatat secara digital, sehingga ada jejak yang bisa ditunjukkan saat audit.</p>
+
+<p>Cara paling aman untuk memulai adalah pilot kecil dengan jumlah data terbatas, lalu membandingkan biaya per nasabah baru dengan metode lama sebelum menaikkan volume.</p>
+
+<p><em>Artikel ini bukan nasihat hukum. Konsultasikan penerapan UU PDP di perusahaan Anda dengan penasihat hukum.</em></p>`,
+  },
+  {
+    slug: "agent-ai-yang-terhubung-ke-crm-dari-percakapan-ke-prospek",
+    title: "Agent AI yang Terhubung ke CRM: Dari Percakapan ke Prospek",
+    excerpt:
+      "Chatbot yang hanya menjawab pertanyaan berhenti di percakapan. Agent AI yang terhubung ke CRM mencatat siapa yang bertanya, apa kebutuhannya, dan apa langkah berikutnya.",
+    category: "AI Agent",
+    date: "2026-11-15",
+    readTime: 4,
+    content: `<p>Banyak perusahaan sudah memasang chatbot di situs web atau WhatsApp. Masalahnya, percakapan sering berakhir begitu saja: pengunjung mendapat jawaban, lalu pergi, dan tim penjualan tidak pernah tahu ada yang bertanya.</p>
+
+<h2>Bedanya agent yang terhubung ke CRM</h2>
+
+<p>Agent AI yang terhubung ke CRM melakukan dua hal sekaligus. Ia menjawab pengunjung dengan pengetahuan bisnis Anda, dan pada saat yang sama mengisi catatan prospek: sumber, minat, kontak, dan tindak lanjut yang dijanjikan.</p>
+
+<ul>
+  <li><strong>Tidak ada prospek yang hilang</strong>: setiap percakapan yang menunjukkan minat tercatat otomatis.</li>
+  <li><strong>Konteks ikut berpindah</strong>: saat tim penjualan menelepon, mereka sudah tahu apa yang ditanyakan.</li>
+  <li><strong>Satu sumber data</strong>: formulir kontak, WhatsApp, dan agent di situs menulis ke tempat yang sama.</li>
+</ul>
+
+<h2>Yang perlu disiapkan</h2>
+
+<p>Tiga hal menentukan berhasil atau tidaknya implementasi: pengetahuan yang rapi untuk melatih agent, definisi yang jelas tentang kapan sebuah percakapan dianggap prospek, dan aturan kapan agent harus menyerahkan percakapan ke manusia.</p>
+
+<h2>Mulai dari satu alur</h2>
+
+<p>Implementasi yang berhasil biasanya dimulai dari satu alur yang paling sering terjadi, misalnya pertanyaan harga atau permintaan demo. Setelah alur itu stabil dan datanya masuk ke CRM dengan benar, alur lain ditambahkan satu per satu.</p>
+
+<p>Enklaris mengimplementasikan agent AI percakapan bersama mitra teknologinya, dari perancangan alur sampai integrasi ke sistem yang sudah Anda pakai.</p>`,
+  },
+  {
+    slug: "menilai-lahan-dengan-data-peta-dan-ai",
+    title: "Menilai Lahan dengan Data, Peta, dan AI",
+    excerpt:
+      "Keputusan properti sering dibuat dengan data yang tersebar di banyak tempat. Sistem informasi lahan menyatukan data, peta, dan analisis dalam satu tampilan.",
+    category: "Geo Analytics",
+    date: "2026-11-15",
+    readTime: 3,
+    content: `<p>Menilai sebidang lahan berarti menjawab banyak pertanyaan sekaligus: di mana letaknya, apa yang ada di sekitarnya, berapa nilai wajarnya, dan bagaimana prospeknya. Jawabannya biasanya tersebar di dokumen, spreadsheet, dan ingatan orang lapangan.</p>
+
+<h2>Satu sistem untuk informasi lahan</h2>
+
+<p>Sistem informasi lahan menggabungkan tiga hal: data properti yang lengkap, peta yang mudah dibaca, dan AI yang membantu menilai. Hasilnya adalah satu tampilan tempat tim bisa melihat lokasi, membandingkan, dan mengambil keputusan.</p>
+
+<h2>Dua penggunaan yang paling umum</h2>
+
+<ul>
+  <li><strong>Penilaian lahan</strong>: membandingkan beberapa lokasi sebelum membeli, menyewa, atau membangun.</li>
+  <li><strong>Manajemen properti</strong>: memantau portofolio yang sudah dimiliki dalam satu peta, lengkap dengan data tiap aset.</li>
+</ul>
+
+<h2>Siapa yang terbantu</h2>
+
+<p>Pengembang properti, pemilik portofolio aset, dan tim ekspansi bisnis yang harus memilih lokasi adalah pengguna yang paling merasakan manfaatnya, karena keputusan mereka bergantung pada lokasi.</p>
+
+<p>Enklaris mengimplementasikan solusi penilaian lahan dan manajemen properti bersama mitra teknologinya, disesuaikan dengan data dan proses yang sudah berjalan di perusahaan Anda.</p>`,
+  },
+  {
     slug: "mengapa-bisnis-indonesia-butuh-whatsapp-business-api",
     title: "Mengapa Bisnis Indonesia Perlu WhatsApp Business API di 2025",
     excerpt:
@@ -53,7 +145,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "WhatsApp API",
     date: "2026-04-15",
     readTime: 4,
-    featured: true,
+    featured: false,
   },
   {
     slug: "ai-agent-vs-chatbot-apa-bedanya",
@@ -97,45 +189,6 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "AI Agent",
     date: "2026-04-10",
     readTime: 5,
-    featured: false,
-  },
-  {
-    slug: "5-tanda-database-bisnis-butuh-optimasi",
-    title: "5 Tanda Database Bisnis Anda Butuh Optimasi Segera",
-    excerpt:
-      "Database yang lambat atau tidak teroptimasi adalah silent killer produktivitas bisnis. Kenali tanda-tandanya sebelum masalah kecil berubah menjadi downtime yang mahal.",
-    content: `<p>Di balik setiap aplikasi bisnis yang berjalan lancar, ada database yang bekerja keras. Tapi seperti infrastruktur lainnya, database punya lifecycle — dan ketika mulai menua atau salah konfigurasi, dampaknya dirasakan di seluruh organisasi: aplikasi lambat, laporan terlambat, dan keputusan bisnis yang tertunda.</p>
-
-<p>Berikut lima sinyal yang seharusnya tidak diabaikan.</p>
-
-<h2>1. Query Time yang Terus Meningkat</h2>
-
-<p>Jika laporan yang dulu selesai dalam hitungan detik kini memakan waktu menit, ini bukan hal yang normal untuk "diterima saja." Query slowdown biasanya mengindikasikan missing index, N+1 query problem, atau tabel yang terlalu besar tanpa partitioning yang tepat. Monitoring query performance secara berkala adalah praktik hygiene yang wajib.</p>
-
-<h2>2. Biaya Storage yang Tumbuh Tidak Proporsional</h2>
-
-<p>Pertumbuhan data adalah hal yang wajar, tapi jika biaya storage tumbuh jauh lebih cepat dari pertumbuhan bisnis, ada yang perlu diperiksa. Kemungkinan: data retention policy yang tidak ada, duplicate records yang tidak di-deduplicate, atau log table yang tidak pernah di-archive. Data yang tidak dikelola bukan hanya mahal — ini juga berisiko dari perspektif compliance.</p>
-
-<h2>3. Inkonsistensi Data yang Sering Muncul</h2>
-
-<p>Laporan keuangan yang tidak sesuai dengan data operasional, atau customer record yang berbeda di sistem yang berbeda, adalah gejala dari masalah yang lebih dalam: schema yang tidak memiliki constraint yang tepat, proses ETL yang tidak reliable, atau lack of transaction management. Inkonsistensi data mengikis kepercayaan pada sistem dan memperlambat pengambilan keputusan.</p>
-
-<h2>4. Kesulitan Scaling saat Traffic Meningkat</h2>
-
-<p>Ketika ada campaign marketing atau event musiman, apakah database Anda menjadi bottleneck? Jika ya, ini adalah tanda arsitektur perlu ditinjau ulang. Scaling database bukan hanya soal menambah resource — terkadang solusinya adalah read replica, caching layer, atau bahkan memisahkan workload OLTP dan OLAP ke sistem yang berbeda.</p>
-
-<h2>5. Schema yang Sudah Tidak Relevan dengan Kebutuhan Bisnis</h2>
-
-<p>Bisnis berevolusi, tapi schema database sering kali tidak ikut berevolusi. Tabel dengan ratusan kolom nullable, relasi yang complex dan tidak terdokumentasi, atau naming convention yang inconsistent adalah hutang teknis yang nyata. Tim developer menghabiskan lebih banyak waktu memahami database daripada membangun fitur baru.</p>
-
-<h2>Langkah Selanjutnya</h2>
-
-<p>Jika Anda mengenali tiga atau lebih tanda di atas, ini saat yang tepat untuk melakukan database health assessment. Assessment yang baik tidak harus memakan waktu lama — dengan tooling yang tepat, gambaran komprehensif bisa didapat dalam beberapa hari.</p>
-
-<p>Tim Enklaris memiliki pengalaman dalam database optimization untuk skala enterprise maupun startup yang sedang tumbuh. Jika Anda ingin mendiskusikan kondisi database Anda, <a href="/#kontak-form">kami siap mendengarkan</a>.</p>`,
-    category: "Database",
-    date: "2026-04-05",
-    readTime: 4,
     featured: false,
   },
   {
@@ -327,66 +380,6 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Jika Anda sedang merencanakan ekspansi atau ingin mengoptimalkan jaringan yang ada, <a href="/#kontak-form">tim geo analytics Enklaris siap membantu</a> memetakan jalannya.</p>`,
     category: "Geo Analytics",
     date: "2026-03-12",
-    readTime: 5,
-    featured: false,
-  },
-  {
-    slug: "best-practices-database-migration-startup-scale-up",
-    title: "Best Practices Database Migration untuk Startup yang Scale Up",
-    excerpt:
-      "Database migration adalah salah satu operasi paling berisiko dalam lifecycle teknis sebuah startup. Tapi dengan perencanaan yang tepat, risiko ini bisa dikelola dan proses bisa berjalan dengan minimal downtime.",
-    content: `<p>Ada momen dalam perjalanan setiap startup ketika database yang dipilih di hari pertama mulai menjadi hambatan. Schema yang dulu cukup sekarang terlalu rigid. Database yang dulu performanya baik sekarang kesulitan menangani beban yang 100x lebih besar. Keputusan yang dibuat saat tim masih dua orang kini terasa mahal.</p>
-
-<p>Database migration adalah jawabannya — tapi ini bukan operasi yang ringan. Berikut adalah framework yang kami gunakan untuk membantu startup menavigasi proses ini.</p>
-
-<h2>Phase 1: Assessment — Pahami Sebelum Bergerak</h2>
-
-<p>Sebelum memutuskan akan migrasi ke mana, pahami dengan detail kondisi saat ini:</p>
-
-<ul>
-  <li><strong>Query profiling</strong> — query mana yang paling sering dieksekusi dan paling lambat?</li>
-  <li><strong>Data volume dan growth rate</strong> — berapa cepat data Anda tumbuh?</li>
-  <li><strong>Access patterns</strong> — apakah workload Anda lebih read-heavy atau write-heavy?</li>
-  <li><strong>Dependency mapping</strong> — sistem dan aplikasi apa saja yang terhubung ke database ini?</li>
-</ul>
-
-<p>Assessment yang teliti di fase ini akan menentukan apakah Anda membutuhkan schema migration, database engine migration, atau keduanya.</p>
-
-<h2>Phase 2: Perencanaan yang Tidak Boleh Diabaikan</h2>
-
-<p>Migration plan yang baik mencakup:</p>
-
-<ul>
-  <li><strong>Rollback strategy</strong> — apa yang terjadi jika migration gagal di tengah jalan?</li>
-  <li><strong>Data validation plan</strong> — bagaimana memastikan data di database baru konsisten dengan sumber?</li>
-  <li><strong>Maintenance window</strong> atau strategi zero-downtime jika bisnis tidak bisa toleransi downtime sama sekali</li>
-  <li><strong>Communication plan</strong> — siapa yang perlu diberitahu dan kapan?</li>
-</ul>
-
-<h2>Phase 3: Migrasi Bertahap, Bukan Big Bang</h2>
-
-<p>Salah satu kesalahan terbesar dalam database migration adalah mencoba memindahkan semuanya sekaligus. Pendekatan yang lebih aman adalah migrasi bertahap:</p>
-
-<p>Mulai dengan read-only workload — jalankan database baru secara paralel, routing query read ke database baru sementara write masih ke database lama. Ini memberi waktu untuk validasi tanpa risiko pada data produksi. Setelah yakin, baru pindahkan write traffic secara incremental.</p>
-
-<h2>Phase 4: Validasi yang Ketat</h2>
-
-<p>Jangan declare victory terlalu cepat. Setelah migration selesai secara teknis, jalankan serangkaian validasi:</p>
-
-<ul>
-  <li>Row count comparison untuk tabel kritis</li>
-  <li>Spot-check pada record individual</li>
-  <li>Performance benchmark — apakah query yang sama lebih cepat di database baru?</li>
-  <li>Application smoke test untuk semua critical path</li>
-</ul>
-
-<h2>Kesalahan Umum yang Bisa Dihindari</h2>
-
-<p>Dari pengalaman mendampingi berbagai startup: underestimasi waktu yang dibutuhkan, tidak melakukan dry run di staging environment yang identical dengan produksi, dan tidak menyiapkan monitoring yang cukup pasca-migration adalah tiga kesalahan yang paling sering muncul.</p>
-
-<p>Migration yang baik bukan yang selesai paling cepat — tapi yang selesai tanpa insiden dan dengan data yang utuh. Jika Anda sedang merencanakan database migration, <a href="/#kontak-form">kami senang mendiskusikan pendekatan yang tepat untuk konteks Anda</a>.</p>`,
-    category: "Database",
-    date: "2026-03-05",
     readTime: 5,
     featured: false,
   },
