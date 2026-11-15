@@ -8,6 +8,7 @@ export default function MotionToggle() {
     const next = !paused;
     setPaused(next);
     document.documentElement.dataset.motion = next ? "paused" : "running";
+    window.dispatchEvent(new Event("ek-motion"));
   };
   return (
     <button className="motion" type="button" aria-pressed={paused} onClick={toggle}>

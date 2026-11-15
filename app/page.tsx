@@ -1,21 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
 import "./home.css";
 import Film from "@/components/Film";
+import BgVideo from "@/components/BgVideo";
 import MotionToggle from "@/components/MotionToggle";
 import EnquiryFlow from "@/components/EnquiryFlow";
 import { SolutionStage, Reel, Industries } from "@/components/HomeSections";
 
-const CASES: { film: "a" | "b" | "c"; title: string; text: string }[] = [
+const CASES: { film?: "a"; image?: string; title: string; text: string }[] = [
   { film: "a", title: "A prospect database curated before the first call", text: "Audiences are profiled, scored and consent-checked with telco-grade analytics, so your sales team starts from people who fit the product." },
-  { film: "b", title: "WhatsApp journeys that qualify leads on their own", text: "Automated messages and dynamic WhatsApp Flows let prospects answer, get a quote and book a call without leaving the chat." },
-  { film: "c", title: "Voice AI that follows up while interest is fresh", text: "An AI voice agent calls opted-in leads, answers their questions and hands the warm ones to your team, with every step logged in the CRM." },
+  { image: "/media/card-chat.jpg", title: "WhatsApp journeys that qualify leads on their own", text: "Automated messages and dynamic WhatsApp Flows let prospects answer, get a quote and book a call without leaving the chat." },
+  { image: "/media/card-call.jpg", title: "Voice AI that follows up while interest is fresh", text: "An AI voice agent calls opted-in leads, answers their questions and hands the warm ones to your team, with every step logged in the CRM." },
 ];
 
 export default function Home() {
   return (
     <div className="ekh">
-      <header className="film hero" id="top">
-        <Film palette="hero" />
+      <header className="film has-media hero" id="top">
+        <BgVideo src="/media/hero.mp4" poster="/media/hero.jpg" eager />
         <div className="wrap hero-body">
           <h1>Curated leads, and AI agents that turn them into customers</h1>
           <p>Enklaris helps insurers and other regulated businesses in Indonesia reach the right people with consent, then convert them through WhatsApp, CRM and voice AI.</p>
@@ -40,8 +41,8 @@ export default function Home() {
           <h2 className="cases-head">Solving the problems that move the business.</h2>
           <div className="cases">
             {CASES.map((c) => (
-              <a key={c.film} className="film case" href="#solutions">
-                <Film palette={c.film} />
+              <a key={c.title} className={`film case${c.image ? " has-media" : ""}`} href="#solutions">
+                {c.image ? <img className="bgv" src={c.image} alt="" loading="lazy" /> : <Film palette="a" />}
                 <div className="top">
                   <h3>{c.title}</h3>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
@@ -70,14 +71,14 @@ export default function Home() {
           <Reel />
           <SolutionStage />
           <div className="panels">
-            <div className="film panel">
-              <Film palette="d" />
+            <div className="film has-media panel">
+              <BgVideo src="/media/team.mp4" poster="/media/team.jpg" />
               <h2>An implementation team that builds with you.</h2>
               <p>We design the flows, connect your CRM and channels, and run the campaign alongside your sales team.</p>
               <a className="pill pill-white" href="#contact">Talk to us</a>
             </div>
-            <div className="film panel">
-              <Film palette="e" />
+            <div className="film has-media panel">
+              <BgVideo src="/media/abstract.mp4" poster="/media/abstract.jpg" />
               <h2>Start with a pilot.</h2>
               <p>Begin with a limited database and budget, compare cost per customer with your current method, then scale what works.</p>
               <a className="pill pill-white" href="#contact">Plan a pilot</a>
