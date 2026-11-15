@@ -183,7 +183,7 @@ export default function WhatsAppAPIPage() {
               Dari template pesan terverifikasi hingga chatbot conversational — kami bantu bisnis Anda hadir di channel yang paling banyak digunakan di Indonesia.
             </p>
             <a
-              href="/#kontak-form"
+              href="/#contact"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold text-white transition-all duration-200 hover:scale-105 hover:shadow-glow"
               style={{ background: "linear-gradient(135deg, #6B3F8F, #8455A8)" }}
             >

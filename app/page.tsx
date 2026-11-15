@@ -1,152 +1,100 @@
-import AgentDemo from "@/components/AgentDemo";
-import ContactForm from "@/components/ContactForm";
+/* eslint-disable @next/next/no-img-element */
+import "./home.css";
+import Film from "@/components/Film";
+import MotionToggle from "@/components/MotionToggle";
+import EnquiryFlow from "@/components/EnquiryFlow";
+import { SolutionStage, Journey, Industries } from "@/components/HomeSections";
 
-const SERVICES = [
-  {
-    href: "/layanan/ai-agent",
-    partner: "Bersama Kata.ai dan Compnet",
-    title: "Implementasi agent dan chatbot AI",
-    desc: "Agent percakapan untuk layanan pelanggan dan alur kerja internal, terhubung ke sistem yang sudah Anda pakai.",
-    points: ["WhatsApp, web, dan kanal lain dalam satu agent", "Terhubung ke CRM dan basis data pelanggan", "Dilatih dengan pengetahuan bisnis Anda"],
-    status: "Berjalan",
-  },
-  {
-    href: "/layanan/akuisisi-consent",
-    partner: "WhatsApp resmi dan AI Kata.ai",
-    title: "Akuisisi nasabah berbasis consent",
-    desc: "Tim telemarketing hanya menelepon orang yang sudah menyatakan tertarik. Persetujuan tercatat digital dan sejalan dengan UU PDP.",
-    points: ["Penyaringan profil sebelum penawaran dikirim", "Pesan WhatsApp resmi terverifikasi", "Biaya per nomor, tanpa lisensi"],
-    status: "Sedang dikerjakan",
-  },
-  {
-    href: "/layanan/geo-analytics",
-    partner: "Bersama Perare",
-    title: "Penilaian lahan dan manajemen properti",
-    desc: "Data, peta, dan AI dalam satu sistem informasi lahan untuk menilai lokasi dan mengelola portofolio properti.",
-    points: ["Penilaian dan valuasi lahan", "Analisis wilayah di atas peta", "Pelaporan portofolio properti"],
-    status: "Berjalan",
-  },
-];
-
-const STEPS = [
-  { n: "01", title: "Saring", desc: "Profil yang sesuai target disaring lebih dulu, sebelum ada satu pesan pun yang dikirim." },
-  { n: "02", title: "Tawarkan", desc: "Penawaran dikirim lewat WhatsApp resmi. Penerima memilih sendiri dengan menekan “Saya tertarik”." },
-  { n: "03", title: "Serahkan", desc: "Hanya nomor yang sudah memberi persetujuan yang masuk ke dasbor tim Anda, siap ditelepon." },
-];
-
-const WHY = [
-  { title: "Satu pintu", desc: "Anda berurusan dengan satu tim untuk teknologi beberapa mitra, dari kontrak sampai operasi harian." },
-  { title: "Paham konteks Indonesia", desc: "Solusi disesuaikan dengan regulasi, perilaku pengguna, dan infrastruktur di Indonesia." },
-  { title: "Mulai dari pilot", desc: "Setiap proyek dimulai kecil dan terukur. Skala dinaikkan setelah angkanya terbukti." },
+const CASES: { film: "a" | "b" | "c"; title: string; text: string }[] = [
+  { film: "a", title: "A prospect database curated before the first call", text: "Audiences are profiled, scored and consent-checked with telco-grade analytics, so your sales team starts from people who fit the product." },
+  { film: "b", title: "WhatsApp journeys that qualify leads on their own", text: "Automated messages and dynamic WhatsApp Flows let prospects answer, get a quote and book a call without leaving the chat." },
+  { film: "c", title: "Voice AI that follows up while interest is fresh", text: "An AI voice agent calls opted-in leads, answers their questions and hands the warm ones to your team, with every step logged in the CRM." },
 ];
 
 export default function Home() {
   return (
-    <div className="ek">
-      <div className="ek-haze">
-        <div className="ek-wrap">
-          <header className="ek-hero">
-            <p className="ek-eyebrow">Mitra implementasi AI dan data · Jakarta</p>
-            <h1>AI dan data yang benar-benar bekerja untuk bisnis Anda.</h1>
-            <p className="ek-lede">
-              Enklaris merancang, memasang, dan menjalankan solusi bersama Kata.ai, Compnet, dan Perare: agent AI
-              percakapan, akuisisi nasabah berbasis consent, dan analitik lahan.
-            </p>
-            <div className="ek-cta">
-              <a className="ek-btn ek-btn-primary" href="#kontak-form">Mulai konsultasi</a>
-              <a className="ek-btn ek-btn-ghost" href="#layanan">Lihat layanan</a>
-            </div>
-            <AgentDemo />
-          </header>
-
-          <div className="ek-partners" aria-label="Mitra">
-            <span>Bekerja bersama</span>
-            <b>Kata.ai</b>
-            <b>Compnet</b>
-            <b>Perare</b>
+    <div className="ekh">
+      <header className="film hero" id="top">
+        <Film palette="hero" />
+        <div className="wrap hero-body">
+          <h1>Curated leads, and AI agents that turn them into customers</h1>
+          <p>Enklaris helps insurers and other regulated businesses in Indonesia reach the right people with consent, then convert them through WhatsApp, CRM and voice AI.</p>
+          <div className="row">
+            <a className="pill pill-white" href="#contact">Talk to us</a>
+            <a className="pill pill-ghost" href="#solutions">See solutions</a>
           </div>
+        </div>
+        <MotionToggle />
+      </header>
+
+      <div className="wrap partners">
+        <p>Working with our technology partners</p>
+        <div className="cells">
+          <div><img src="/partners/kata-ai.svg" alt="Kata.ai" style={{ height: 30 }} /></div>
+          <div><img src="/partners/compnet.webp" alt="Compnet" style={{ height: 62 }} /></div>
         </div>
       </div>
 
-      <section id="layanan" className="ek-section">
-        <div className="ek-wrap">
-          <div className="ek-head">
-            <p className="ek-eyebrow">Layanan</p>
-            <h2>Tiga solusi yang sudah berjalan.</h2>
-            <p className="ek-lede">
-              Setiap solusi dijalankan bersama mitra teknologi yang ahli di bidangnya. Enklaris memegang perancangan,
-              integrasi, dan operasinya.
-            </p>
-          </div>
-          <div className="ek-services">
-            {SERVICES.map((s) => (
-              <article key={s.href} className="ek-svc ek-glass">
-                <p className="ek-with">{s.partner}</p>
-                <h3>{s.title}</h3>
-                <p>{s.desc}</p>
-                <ul>
-                  {s.points.map((p) => (
-                    <li key={p}>{p}</li>
-                  ))}
-                </ul>
-                <div className="ek-status">
-                  <span className="ek-pill ek-pill-on">{s.status}</span>
-                  <a className="ek-more" href={s.href}>Pelajari lebih lanjut</a>
+      <section id="use-cases">
+        <div className="wrap">
+          <h2 className="cases-head">Solving the problems that move the business.</h2>
+          <div className="cases">
+            {CASES.map((c) => (
+              <a key={c.film} className="film case" href="#solutions">
+                <Film palette={c.film} />
+                <div className="top">
+                  <h3>{c.title}</h3>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
                 </div>
-              </article>
+                <p>{c.text}</p>
+              </a>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="cara-kerja" className="ek-section ek-haze">
-        <div className="ek-wrap">
-          <div className="ek-head">
-            <p className="ek-eyebrow">Cara kerja · akuisisi berbasis consent</p>
-            <h2>Saring. Tawarkan. Serahkan.</h2>
-            <p className="ek-lede">Tiga langkah yang mengubah daftar nomor menjadi daftar orang yang menunggu ditelepon.</p>
-          </div>
-          <div className="ek-flow">
-            {STEPS.map((s) => (
-              <div key={s.n} className="ek-step ek-glass">
-                <span className="ek-step-n">{s.n}</span>
-                <h3>{s.title}</h3>
-                <p>{s.desc}</p>
-              </div>
-            ))}
-          </div>
-          <div className="ek-assure">
-            <i>✓</i>
-            <span>Data nasabah tidak berpindah sebelum ada persetujuan.</span>
+      <section style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <p className="statement">
+            We bring together a <b>curated database</b>, <b>AI agents</b> and a <b>team that runs them</b>, so more of your leads become customers.
+          </p>
+        </div>
+      </section>
+
+      <section className="night" id="solutions">
+        <div className="wrap">
+          <SolutionStage />
+          <Journey />
+          <div className="panels">
+            <div className="film panel">
+              <Film palette="d" />
+              <h2>An implementation team that builds with you.</h2>
+              <p>We design the flows, connect your CRM and channels, and run the campaign alongside your sales team.</p>
+              <a className="pill pill-white" href="#contact">Talk to us</a>
+            </div>
+            <div className="film panel">
+              <Film palette="e" />
+              <h2>Start with a pilot.</h2>
+              <p>Begin with a limited database and budget, compare cost per customer with your current method, then scale what works.</p>
+              <a className="pill pill-white" href="#contact">Plan a pilot</a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="mengapa" className="ek-section">
-        <div className="ek-wrap">
-          <div className="ek-head">
-            <p className="ek-eyebrow">Mengapa Enklaris</p>
-            <h2>Bukan hanya vendor. Mitra yang ikut menjalankan.</h2>
-          </div>
-          <div className="ek-why">
-            {WHY.map((w) => (
-              <div key={w.title}>
-                <h3>{w.title}</h3>
-                <p>{w.desc}</p>
-              </div>
-            ))}
-          </div>
+      <section id="industries">
+        <div className="wrap">
+          <Industries />
         </div>
       </section>
 
-      <section id="kontak-form" className="ek-section ek-haze">
-        <div className="ek-wrap ek-contact">
-          <div className="ek-head">
-            <p className="ek-eyebrow">Mulai diskusi</p>
-            <h2>Ceritakan kebutuhan Anda.</h2>
-            <p className="ek-lede">Kami membalas dalam satu hari kerja.</p>
+      <section className="night" id="contact">
+        <div className="wrap contact">
+          <div className="lead">
+            <h2>Tell us what you need.</h2>
+            <p>Five short questions, about a minute. We reply within one business day.</p>
           </div>
-          <ContactForm />
+          <EnquiryFlow />
         </div>
       </section>
     </div>

@@ -22,9 +22,9 @@ const config: Config = {
       },
       fontFamily: {
         // "jakarta" and "inter" are legacy class names kept so existing pages keep working
-        jakarta: ["var(--font-display)", "Georgia", "serif"],
+        jakarta: ["var(--font-sans)", "system-ui", "sans-serif"],
         inter: ["var(--font-sans)", "system-ui", "sans-serif"],
-        display: ["var(--font-display)", "Georgia", "serif"],
+        display: ["var(--font-sans)", "system-ui", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
       },
       animation: {

@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 
 const LINKS = [
-  { label: "Layanan", href: "/#layanan" },
-  { label: "Tentang", href: "/tentang" },
+  { label: "Use cases", href: "/#use-cases" },
+  { label: "Solutions", href: "/#solutions" },
+  { label: "Industries", href: "/#industries" },
   { label: "Blog", href: "/blog" },
-  { label: "Kontak", href: "/#kontak-form" },
 ];
 
 export default function Navbar() {
@@ -26,7 +26,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2 text-2xl font-display tracking-tight text-white">
+        <a href="/" className="flex items-center gap-2 text-2xl font-medium tracking-tight text-white">
           <span className="w-2.5 h-2.5 rounded-full bg-citron" aria-hidden="true" />
           enklaris
         </a>
@@ -47,10 +47,10 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="/#kontak-form"
-            className="px-5 py-2.5 rounded-lg text-sm font-semibold text-obsidian bg-citron transition-all duration-200 hover:scale-105"
+            href="/#contact"
+            className="px-5 py-2.5 rounded-full text-sm font-semibold text-obsidian bg-white transition-all duration-200 hover:scale-105"
           >
-            Mulai konsultasi
+            Talk to us
           </a>
         </div>
 
@@ -96,11 +96,11 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="/#kontak-form"
+            href="/#contact"
             className="px-5 py-2.5 rounded-lg text-sm font-semibold text-white text-center bg-aubergine transition-all duration-200"
             onClick={() => setMenuOpen(false)}
           >
-            Mulai konsultasi
+            Talk to us
           </a>
         </div>
       </div>

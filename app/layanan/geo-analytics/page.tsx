@@ -191,7 +191,7 @@ export default function GeoAnalyticsPage() {
               Spatial intelligence yang membantu Anda memahami di mana peluang bisnis berada — dari ekspansi outlet hingga analisis kompetitor.
             </p>
             <a
-              href="/#kontak-form"
+              href="/#contact"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold text-obsidian transition-all duration-200 hover:scale-105"
               style={{ background: "linear-gradient(135deg, #D9CFE4, #EDE4F7)" }}
             >

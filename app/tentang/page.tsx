@@ -182,7 +182,7 @@ export default function TentangPage() {
           </h2>
           <p className="text-white/40 mb-8">Ceritakan kebutuhan bisnis Anda kepada kami.</p>
           <a
-            href="/#kontak-form"
+            href="/#contact"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-white transition-all duration-200 hover:scale-105"
             style={{ background: "linear-gradient(135deg, #6B3F8F, #8455A8)", fontSize: "1rem" }}
           >

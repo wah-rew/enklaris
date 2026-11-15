@@ -32,17 +32,17 @@ body {
 /* ─── Typography ─────────────────────────────────────────── */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display), Georgia, serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
-/* Display serif reads best at medium weight; overrides legacy font-extrabold utilities on headings */
+/* Light, tightly tracked headings; overrides legacy font-extrabold utilities */
 h1, h2, h3 {
-  font-weight: 500 !important;
-  letter-spacing: -0.02em;
+  font-weight: 300 !important;
+  letter-spacing: -0.03em;
 }
 
 .font-jakarta {
-  font-family: var(--font-display), sans-serif;
+  font-family: var(--font-sans), sans-serif;
 }
 
 .font-mono-accent {
