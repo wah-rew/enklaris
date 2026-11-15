@@ -21,7 +21,7 @@ export function generateMetadata({ params }: Props) {
 
 function formatDate(dateStr: string) {
   const date = new Date(dateStr);
-  return date.toLocaleDateString("id-ID", {
+  return date.toLocaleDateString("en-GB", {
     day: "numeric",
     month: "long",
     year: "numeric",
@@ -31,8 +31,7 @@ function formatDate(dateStr: string) {
 const CATEGORY_COLORS: Record<string, string> = {
   "WhatsApp API": "#25D366",
   "AI Agent": "#8E6BB0",
-  "Akuisisi Nasabah": "#6B3F8F",
-  "Geo Analytics": "#6B7280",
+  "Lead Generation": "#6B3F8F",
   "Industry Insights": "#8B5CF6",
 };
 
@@ -62,7 +61,7 @@ export default function BlogPostPage({ params }: Props) {
           className="inline-flex items-center gap-2 text-sm font-medium transition-colors hover:opacity-70"
           style={{ color: "#8E6BB0" }}
         >
-          ← Kembali ke Blog
+          Back to blog
         </Link>
       </div>
 
@@ -93,7 +92,7 @@ export default function BlogPostPage({ params }: Props) {
           >
             <span>{formatDate(post.date)}</span>
             <span>·</span>
-            <span>{post.readTime} menit baca</span>
+            <span>{post.readTime} min read</span>
           </div>
           <div
             className="mt-6 border-t"
@@ -121,20 +120,20 @@ export default function BlogPostPage({ params }: Props) {
             className="text-sm font-semibold uppercase tracking-widest mb-3"
             style={{ color: "#8E6BB0" }}
           >
-            Diskusikan Bersama Kami
+            Talk to us
           </p>
           <p
             className="text-lg font-medium mb-6"
             style={{ color: "#FFFFFF" }}
           >
-            Tertarik berdiskusi tentang solusi untuk bisnis Anda?
+            Want to discuss a solution for your business?
           </p>
           <Link
             href="/#contact"
             className="inline-block px-8 py-3 rounded-full text-sm font-bold text-white transition-all duration-200 hover:scale-105 hover:shadow-lg"
             style={{ background: "linear-gradient(135deg, #8E6BB0, #55306F)" }}
           >
-            Hubungi Kami →
+            Get in touch
           </Link>
         </div>
       </article>
@@ -146,7 +145,7 @@ export default function BlogPostPage({ params }: Props) {
             className="text-xl font-bold mb-8"
             style={{ color: "#2A1638" }}
           >
-            Artikel Lainnya
+            More articles
           </h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
             {relatedPosts.map((related) => (
@@ -183,7 +182,7 @@ export default function BlogPostPage({ params }: Props) {
                     className="text-xs mt-2"
                     style={{ color: "#9CA3AF" }}
                   >
-                    {related.readTime} menit baca
+                    {related.readTime} min read
                   </p>
                 </div>
               </Link>
