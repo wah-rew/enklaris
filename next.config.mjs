@@ -17,6 +17,9 @@ const nextConfig = {
       { source: '/blog/menilai-lahan-dengan-data-peta-dan-ai', destination: '/blog', permanent: true },
       { source: '/blog/geo-analytics-brand-retail-memahami-pelanggan-berdasarkan-lokasi', destination: '/blog', permanent: true },
       { source: '/blog/dari-data-ke-keputusan-peran-geo-intelligence-ekspansi-bisnis', destination: '/blog', permanent: true },
+      // Blog hidden for now: remove these two lines to bring it back
+      { source: '/blog', destination: '/', permanent: false },
+      { source: '/blog/:slug', destination: '/', permanent: false },
     ];
   },
 };
