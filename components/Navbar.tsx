@@ -6,7 +6,6 @@ const LINKS = [
   { label: "Use cases", href: "/#use-cases" },
   { label: "Solutions", href: "/#solutions" },
   { label: "Industries", href: "/#industries" },
-  { label: "Blog", href: "/blog" },
 ];
 
 export default function Navbar() {
