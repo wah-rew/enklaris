@@ -8,6 +8,18 @@ const TICKET_FROM = process.env.ENQUIRY_FROM || "Enklaris <noreply@legal-kan.com
 const esc = (v: unknown) =>
   String(v ?? "").slice(0, 500).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c] as string));
 
+// The Canva-built version of the site posts to this route from Canva's own domains.
+const ALLOWED_ORIGIN = /^https:\/\/([a-z0-9-]+\.)*(canvacode\.com|canva\.site|enklaris\.com)$/i;
+function cors(req: NextRequest): Record<string, string> {
+  const origin = req.headers.get("origin") || "";
+  if (!ALLOWED_ORIGIN.test(origin)) return {};
+  return { "Access-Control-Allow-Origin": origin, "Access-Control-Allow-Methods": "POST, OPTIONS", "Access-Control-Allow-Headers": "Content-Type", Vary: "Origin" };
+}
+
+export async function OPTIONS(req: NextRequest) {
+  return new NextResponse(null, { status: 204, headers: cors(req) });
+}
+
 // Receives the homepage enquiry flow, stores the lead and emails it to the business inbox as a ticket.
 export async function POST(req: NextRequest) {
   try {
@@ -16,7 +28,7 @@ export async function POST(req: NextRequest) {
     const company = String(b.company ?? "").trim();
     const email = String(b.email ?? "").trim();
     if (!name || !company || !/^\S+@\S+\.\S+$/.test(email) || !b.goal) {
-      return NextResponse.json({ error: "Name, company, a valid email and a goal are required." }, { status: 400 });
+      return NextResponse.json({ error: "Name, company, a valid email and a goal are required." }, { status: 400, headers: cors(req) });
     }
     const channels = Array.isArray(b.channels) ? b.channels.map(String).join(", ") : "";
     const rows: [string, string][] = [
@@ -56,10 +68,10 @@ export async function POST(req: NextRequest) {
     if (!dbRes?.ok) console.error("enquiry: lead not stored", dbRes ? await dbRes.text() : "network error");
     if (!mailRes?.ok) console.error("enquiry: ticket email not sent", mailRes ? await mailRes.text() : "network error");
     // The visitor only sees success if the request reached at least one of the two places.
-    if (!dbRes?.ok && !mailRes?.ok) return NextResponse.json({ error: "Could not record the request." }, { status: 502 });
-    return NextResponse.json({ success: true });
+    if (!dbRes?.ok && !mailRes?.ok) return NextResponse.json({ error: "Could not record the request." }, { status: 502, headers: cors(req) });
+    return NextResponse.json({ success: true }, { headers: cors(req) });
   } catch (err) {
     console.error("enquiry error:", err);
-    return NextResponse.json({ error: "Server error." }, { status: 500 });
+    return NextResponse.json({ error: "Server error." }, { status: 500, headers: cors(req) });
   }
 }
