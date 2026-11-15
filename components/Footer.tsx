@@ -12,9 +12,6 @@ export default function Footer() {
             <p className="text-white/50 text-sm leading-relaxed max-w-xs font-mono-accent tracking-wide">
               Curated leads and AI agents
             </p>
-            <p className="text-white/40 text-sm mt-3 leading-relaxed max-w-xs">
-              Working with Kata.ai and Compnet.
-            </p>
           </div>
 
           {/* Layanan */}

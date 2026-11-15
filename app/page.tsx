@@ -28,14 +28,6 @@ export default function Home() {
         <MotionToggle />
       </header>
 
-      <div className="wrap partners">
-        <p>Working with our technology partners</p>
-        <div className="cells">
-          <div><img src="/partners/kata-ai.svg" alt="Kata.ai" style={{ height: 30 }} /></div>
-          <div><img src="/partners/compnet.webp" alt="Compnet" style={{ height: 62 }} /></div>
-        </div>
-      </div>
-
       <section id="use-cases">
         <div className="wrap">
           <h2 className="cases-head">Solving the problems that move the business.</h2>

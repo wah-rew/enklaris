@@ -8,13 +8,11 @@ const SOLUTIONS = [
     name: "Lead generation and database curation",
     text: "A prospect database built for your product: profiled, scored and consent-checked before it reaches your sales team.",
     points: ["Profiling by location and behaviour", "Scoring to rank who to contact first", "Consent recorded for every contact"],
-    partner: "With telco-grade analytics from our data partner",
   },
   {
     name: "AI agent implementation",
     text: "One agent across the lead journey: automated WhatsApp, dynamic Flows for forms and quotes, CRM sync, and voice AI for follow-up calls.",
     points: ["WhatsApp automation and Flows", "CRM updated at every step", "Voice AI for callbacks"],
-    partner: "With Kata.ai and Compnet",
   },
 ];
 
@@ -52,7 +50,6 @@ export function SolutionStage() {
       <div className="sol swap" role="tabpanel" key={i}>
         <p>{s.text}</p>
         <ul>{s.points.map((p) => <li key={p}>{p}</li>)}</ul>
-        <small>{s.partner}</small>
       </div>
     </div>
   );
