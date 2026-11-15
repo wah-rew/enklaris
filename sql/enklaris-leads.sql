@@ -13,3 +13,8 @@ ALTER TABLE enklaris_leads ENABLE ROW LEVEL SECURITY;
 
 CREATE POLICY "enklaris_leads_insert" ON enklaris_leads
   FOR INSERT WITH CHECK (TRUE);
+
+-- Lead validation (written by the scheduled review, not by the website)
+ALTER TABLE enklaris_leads
+  ADD COLUMN IF NOT EXISTS validation_note TEXT,
+  ADD COLUMN IF NOT EXISTS validated_at TIMESTAMPTZ;

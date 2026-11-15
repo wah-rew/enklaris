@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const SUPABASE_URL =
-  process.env.NEXT_PUBLIC_SUPABASE_URL || "https://pqhxwnfgthuynadbbjvc.supabase.co";
+  process.env.NEXT_PUBLIC_SUPABASE_URL || "https://rkudnzcsaragdrlqynax.supabase.co";
 const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "";
 
 export async function POST(req: NextRequest) {
