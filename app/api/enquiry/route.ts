@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://pqhxwnfgthuynadbbjvc.supabase.co";
 const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "";
-const TICKET_TO = process.env.ENQUIRY_TO || "business@enklaris.com";
+const TICKET_TO = process.env.ENQUIRY_TO || "business@karyaselaksamakna.com";
 const TICKET_FROM = process.env.ENQUIRY_FROM || "Enklaris <noreply@legal-kan.com>";
 
 const esc = (v: unknown) =>

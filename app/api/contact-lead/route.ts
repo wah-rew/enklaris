@@ -51,7 +51,7 @@ export async function POST(req: NextRequest) {
       },
       body: JSON.stringify({
         from: "Enklaris <noreply@legal-kan.com>",
-        to: [process.env.ENQUIRY_TO || "business@enklaris.com"],
+        to: [process.env.ENQUIRY_TO || "business@karyaselaksamakna.com"],
         subject: `🔔 Lead baru dari Enklaris — ${nama}`,
         html: `
           <h2 style="font-family: sans-serif; color: #2A1638;">Lead baru dari website Enklaris</h2>
