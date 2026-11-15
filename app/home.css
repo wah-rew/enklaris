@@ -44,6 +44,65 @@
 .ekh .row{display:flex;gap:.7rem;flex-wrap:wrap;justify-content:center}
 .ekh .motion{position:absolute;right:max(20px,env(safe-area-inset-right,0px));bottom:18px;background:rgba(18,10,24,.45);border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:999px;font-size:.78rem;padding:.35rem .8rem;cursor:pointer}
 
+/* hero reel: three scenes that play in turn */
+.ekh .journey-head{display:grid;gap:.8rem;margin-bottom:2rem;max-width:640px}
+.ekh .journey-head p{font-size:1.1rem}
+.ekh .reel{display:grid;gap:1rem;margin-bottom:clamp(2.5rem,6vw,4.5rem)}
+.ekh .reel-screen{border-radius:var(--r);display:grid}
+.ekh .reel-screen.film::after{background:linear-gradient(180deg,rgba(18,10,24,.55),rgba(18,10,24,.7))}
+.ekh .shot{grid-area:1/1;padding:clamp(1.5rem,4vw,3.5rem);display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:clamp(1.25rem,4vw,3rem);align-items:center;min-height:420px}
+.ekh .shot-text{display:grid;gap:.8rem}
+.ekh .shot-text h3{font-size:clamp(1.4rem,2.6vw,2rem);font-weight:300;letter-spacing:-.03em}
+.ekh .shot-text p{font-size:1rem;color:rgba(255,255,255,.8);max-width:36ch}
+.ekh .shot-vis{display:grid;gap:1rem}
+.ekh .shot [data-at]{transition:opacity .45s ease,transform .45s cubic-bezier(.2,.7,.2,1),background .4s,color .4s,box-shadow .4s}
+.ekh .shot.play [data-at]:not(.on):not([data-keep]){opacity:0;transform:translateY(8px)}
+.ekh .dots{display:grid;grid-template-columns:repeat(12,1fr);gap:9px}
+.ekh .dots i{aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.3)}
+.ekh .shot.play .dots i:not(.on){background:rgba(255,255,255,.12)}
+.ekh .dots i.on{background:var(--signal);box-shadow:0 0 0 4px rgba(212,225,87,.16)}
+.ekh .frows{display:flex;gap:.5rem;flex-wrap:wrap}
+.ekh .frow{display:flex;align-items:center;gap:.6rem;font-size:.85rem;border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:.4rem .5rem .4rem .85rem;color:rgba(255,255,255,.7)}
+.ekh .tg{width:30px;height:16px;border-radius:999px;background:rgba(255,255,255,.22);position:relative;transition:background .3s}
+.ekh .tg::after{content:"";position:absolute;left:2px;top:2px;width:12px;height:12px;border-radius:50%;background:#fff;transition:transform .3s}
+.ekh .frow.on{color:#fff}.ekh .frow.on .tg{background:var(--signal)}.ekh .frow.on .tg::after{transform:translateX(14px);background:#1E1128}
+.ekh .okline{display:flex;align-items:center;gap:.5rem;font-size:.9rem;font-weight:500}
+.ekh .okline i{width:1.2rem;height:1.2rem;border-radius:50%;background:var(--signal);color:#1E1128;display:grid;place-items:center;font-style:normal;font-size:.72rem;font-weight:700;flex:none}
+.ekh .phone{width:min(300px,100%);justify-self:center;background:#0E0713;border:1px solid rgba(255,255,255,.2);border-radius:26px;padding:1rem;display:grid;gap:.6rem}
+.ekh .phone small{font-size:.72rem;color:rgba(255,255,255,.6)}
+.ekh .bub{background:rgba(255,255,255,.12);border-radius:14px 14px 14px 4px;padding:.6rem .75rem;font-size:.84rem;line-height:1.4}
+.ekh .fcard{background:#fff;color:#1E1128;border-radius:14px;padding:.8rem;display:grid;gap:.6rem;font-size:.82rem}
+.ekh .fcard b{font-weight:500}
+.ekh .fopts{display:flex;gap:.35rem;flex-wrap:wrap}
+.ekh .fopts span{border:1px solid #D9D2E0;border-radius:999px;padding:.25rem .6rem;font-size:.76rem}
+.ekh .fopts .fsel.on{background:#2A1638;color:#fff;border-color:transparent}
+.ekh .fcheck{display:flex;align-items:center;gap:.5rem;font-size:.78rem}
+.ekh .fcheck i{width:15px;height:15px;border-radius:4px;border:1.5px solid #8C8496;display:grid;place-items:center;font-style:normal;font-size:.65rem;flex:none}
+.ekh .fcheck.on i{background:#2A1638;border-color:#2A1638;color:#fff}.ekh .fcheck.on i::before{content:"✓"}
+.ekh .fbtn{background:#E9E4EF;color:#8C8496;border-radius:999px;text-align:center;padding:.45rem;font-weight:500}
+.ekh .fbtn.on{background:#2A1638;color:#fff}
+.ekh .call{display:grid;justify-items:center;gap:1rem;text-align:center}
+.ekh .call b{font-weight:500}
+.ekh .ring{width:84px;height:84px;border-radius:50%;background:rgba(255,255,255,.14);display:grid;place-items:center;position:relative}
+.ekh .ring svg{width:30px;height:30px}
+.ekh .ring::before,.ekh .ring::after{content:"";position:absolute;inset:0;border-radius:50%;border:1px solid rgba(255,255,255,.4);animation:ringp 2.4s ease-out infinite}
+.ekh .ring::after{animation-delay:1.2s}
+@keyframes ringp{to{transform:scale(1.9);opacity:0}}
+.ekh .wave{display:flex;gap:4px;align-items:center;height:36px}
+.ekh .wave span{width:3px;height:100%;border-radius:3px;background:var(--signal);transform:scaleY(.25);animation:wv 1.1s ease-in-out infinite}
+.ekh .wave span:nth-child(3n){animation-duration:.8s}.ekh .wave span:nth-child(2n){animation-delay:.25s}.ekh .wave span:nth-child(5n){animation-delay:.5s}
+@keyframes wv{50%{transform:scaleY(1)}}
+.ekh .tags{display:flex;gap:.4rem;flex-wrap:wrap;justify-content:center}
+.ekh .tags span{font-size:.82rem;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:.35rem .8rem}
+.ekh .reel-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9rem}
+.ekh .rstep{all:unset;box-sizing:border-box;cursor:pointer;position:relative;padding-top:.75rem;border-top:2px solid rgba(255,255,255,.22);font-size:.95rem;color:rgba(255,255,255,.62);transition:color .3s}
+.ekh .rstep:focus-visible{outline:2px solid var(--signal);outline-offset:4px}
+.ekh .rstep[aria-selected="true"]{color:#fff}
+.ekh .rstep i{position:absolute;left:0;top:-2px;height:2px;width:0;background:var(--signal)}
+.ekh .rstep[aria-selected="true"] i{width:100%}
+.ekh .rstep.run i{animation:rfill 6.5s linear forwards}
+@keyframes rfill{from{width:0}to{width:100%}}
+
 /* partners */
 .ekh .partners{padding-block:clamp(2.5rem,5vw,4rem) 0}
 .ekh .partners p{color:var(--muted);font-size:.95rem;margin-bottom:1.1rem}
@@ -107,9 +166,15 @@
 .ekh .itab{font-size:.92rem;padding:.5rem 1rem;border-radius:999px;border:0;background:transparent;color:var(--muted);cursor:pointer;transition:background .2s,color .2s}
 .ekh .itab[aria-selected="true"]{background:var(--bg);color:var(--ink);box-shadow:0 1px 3px rgba(30,17,40,.15)}
 .ekh .ind{border-radius:var(--r);min-height:clamp(340px,44vw,500px);display:grid;align-content:end;padding:clamp(1.5rem,4vw,3rem)}
-.ekh .ind-body{display:grid;gap:.8rem;max-width:560px}
+.ekh .ind::after{background:linear-gradient(180deg,rgba(18,10,24,.5),rgba(18,10,24,.8))}
+.ekh .ind-body{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:1.5rem clamp(1.5rem,5vw,4rem);align-items:end}
+.ekh .ind-text{display:grid;gap:.8rem}
+.ekh .ind-cases{display:grid}
+.ekh .ind-cases small{font-size:.85rem;color:rgba(255,255,255,.7);padding-bottom:.7rem}
+.ekh .ind-case{display:grid;gap:.25rem;padding:.9rem 0;border-top:1px solid rgba(255,255,255,.28)}
+.ekh .ind-case b{font-weight:500;color:#fff;font-size:1.05rem;letter-spacing:-.01em}
+.ekh .ind-case span{font-size:.92rem;color:rgba(255,255,255,.84)}
 .ekh .ind-body p{color:rgba(255,255,255,.88)}
-.ekh .ind-body span{font-size:.88rem;color:rgba(255,255,255,.75)}
 .ekh .ind-body.swap>*{animation:rise .5s cubic-bezier(.2,.7,.2,1) both}
 
 /* flow form */
@@ -152,8 +217,12 @@
   .ekh .cases,.ekh .journey ol{grid-template-columns:1fr}
   .ekh .case{aspect-ratio:auto;min-height:300px}
   .ekh .contact{grid-template-columns:1fr}
+  .ekh .shot,.ekh .ind-body{grid-template-columns:1fr;min-height:0}
+  .ekh .reel-steps{font-size:.8rem}
+  .ekh .rstep{font-size:.82rem}
 }
-@media (prefers-reduced-motion:reduce){.ekh .pill,.ekh .case,.ekh .case svg,.ekh .journey li.on::after,.ekh .flow-bar i{transition:none}.ekh .flow-step.swap{animation:none}.ekh .sol.swap>*,.ekh .ind-body.swap>*{animation:none}}
+@media (prefers-reduced-motion:reduce){.ekh .pill,.ekh .case,.ekh .case svg,.ekh .journey li.on::after,.ekh .flow-bar i,.ekh .shot [data-at]{transition:none}.ekh .ring::before,.ekh .ring::after,.ekh .wave span,.ekh .rstep.run i{animation:none}.ekh .flow-step.swap{animation:none}.ekh .sol.swap>*,.ekh .ind-body.swap>*{animation:none}}
 
+.ekh [hidden]{display:none!important}
 .ekh .hero-body{padding-top:7rem}
 .ekh h1,.ekh h2,.ekh h3{font-family:var(--font-sans),system-ui,sans-serif}

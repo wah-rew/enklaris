@@ -11,6 +11,7 @@ const PALETTES: Record<string, [string, string[]]> = {
   d: ["#120A18", ["#B79BDA", "#6B3F8F", "#F2ECF8", "#4A2866"]],
   e: ["#170D1F", ["#3A1F4D", "#8E6BB0", "#D4E157", "#C9B3E0"]],
   f: ["#1A0E23", ["#7A4FA3", "#DCCBF0", "#4A2866", "#B79BDA"]],
+  g: ["#150B1D", ["#55306F", "#8E6BB0", "#3A1F4D", "#B79BDA", "#D4E157"]],
 };
 const W = 200;
 const H = 120;

@@ -3,7 +3,7 @@ import "./home.css";
 import Film from "@/components/Film";
 import MotionToggle from "@/components/MotionToggle";
 import EnquiryFlow from "@/components/EnquiryFlow";
-import { SolutionStage, Journey, Industries } from "@/components/HomeSections";
+import { SolutionStage, Reel, Industries } from "@/components/HomeSections";
 
 const CASES: { film: "a" | "b" | "c"; title: string; text: string }[] = [
   { film: "a", title: "A prospect database curated before the first call", text: "Audiences are profiled, scored and consent-checked with telco-grade analytics, so your sales team starts from people who fit the product." },
@@ -63,8 +63,12 @@ export default function Home() {
 
       <section className="night" id="solutions">
         <div className="wrap">
+          <div className="journey-head">
+            <h2>From curated database to closed sale.</h2>
+            <p>Three steps, one continuous journey for every lead.</p>
+          </div>
+          <Reel />
           <SolutionStage />
-          <Journey />
           <div className="panels">
             <div className="film panel">
               <Film palette="d" />

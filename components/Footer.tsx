@@ -68,10 +68,6 @@ export default function Footer() {
           <p className="text-sm text-white/30">
             © 2026 Enklaris. All rights reserved.
           </p>
-          <div className="flex items-center gap-2 text-sm text-white/30">
-            <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#D4E157" }} />
-            South Jakarta, Indonesia
-          </div>
         </div>
       </div>
     </footer>
