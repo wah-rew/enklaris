@@ -31,14 +31,17 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Name, company, a valid email and a goal are required." }, { status: 400, headers: cors(req) });
     }
     const channels = Array.isArray(b.channels) ? b.channels.map(String).join(", ") : "";
+    const role = String(b.role ?? "").trim();
     const rows: [string, string][] = [
       ["Goal", String(b.goal)],
+      ["Company", company],
       ["Industry", String(b.industry ?? "")],
+      ["Company size", String(b.size ?? "")],
       ["Monthly reach", String(b.volume ?? "")],
       ["Agent scope", channels],
-      ["Start", String(b.start ?? "")],
+      ["Timeline", String(b.start ?? "")],
       ["Budget", String(b.budget || "Not stated")],
-      ["Contact", `${name}, ${company}`],
+      ["Contact", role ? `${name}, ${role}` : name],
       ["Email", email],
       ["WhatsApp", String(b.wa ?? "")],
     ].filter(([, v]) => v) as [string, string][];
