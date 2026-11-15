@@ -6,7 +6,7 @@ import { BLOG_POSTS, CATEGORIES } from "@/lib/blog-posts";
 
 function formatDate(dateStr: string) {
   const date = new Date(dateStr);
-  return date.toLocaleDateString("id-ID", {
+  return date.toLocaleDateString("en-GB", {
     day: "numeric",
     month: "long",
     year: "numeric",
@@ -16,21 +16,20 @@ function formatDate(dateStr: string) {
 const CATEGORY_COLORS: Record<string, string> = {
   "WhatsApp API": "#25D366",
   "AI Agent": "#8E6BB0",
-  "Akuisisi Nasabah": "#6B3F8F",
-  "Geo Analytics": "#6B7280",
+  "Lead Generation": "#6B3F8F",
   "Industry Insights": "#8B5CF6",
 };
 
 export default function BlogPage() {
-  const [activeCategory, setActiveCategory] = useState("Semua");
+  const [activeCategory, setActiveCategory] = useState("All");
 
   const filtered =
-    activeCategory === "Semua"
+    activeCategory === "All"
       ? BLOG_POSTS
       : BLOG_POSTS.filter((p) => p.category === activeCategory);
 
   const featured = BLOG_POSTS.find((p) => p.featured);
-  const showFeatured = activeCategory === "Semua" && featured;
+  const showFeatured = activeCategory === "All" && featured;
 
   return (
     <main
@@ -53,14 +52,14 @@ export default function BlogPage() {
             className="text-4xl md:text-5xl font-extrabold leading-tight mb-6"
             style={{ color: "#FFFFFF" }}
           >
-            Insights &amp; Perspektif
+            Insights and perspectives
           </h1>
           <p
             className="text-lg max-w-2xl mx-auto leading-relaxed"
             style={{ color: "rgba(251,250,253,0.65)" }}
           >
-            Pemikiran kami tentang integrasi teknologi, AI, dan masa depan
-            bisnis digital Indonesia.
+            Our thinking on lead generation, AI agents and customer
+            conversations in Indonesia.
           </p>
         </div>
       </section>
@@ -132,7 +131,7 @@ export default function BlogPage() {
                 >
                   <span>{formatDate(featured.date)}</span>
                   <span>·</span>
-                  <span>{featured.readTime} menit baca</span>
+                  <span>{featured.readTime} min read</span>
                 </div>
               </div>
             </div>
@@ -189,13 +188,13 @@ export default function BlogPage() {
                     style={{ color: "#9CA3AF" }}
                   >
                     <span>{formatDate(post.date)}</span>
-                    <span>{post.readTime} menit</span>
+                    <span>{post.readTime} min read</span>
                   </div>
                   <div
                     className="mt-4 text-sm font-semibold transition-colors"
                     style={{ color: "#8E6BB0" }}
                   >
-                    Baca selengkapnya →
+                    Read more
                   </div>
                 </div>
               </Link>
@@ -207,7 +206,7 @@ export default function BlogPage() {
             className="text-center py-16 text-lg"
             style={{ color: "#9CA3AF" }}
           >
-            Tidak ada artikel di kategori ini.
+            No articles in this category yet.
           </p>
         )}
       </div>

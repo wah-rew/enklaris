@@ -11,385 +11,242 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    slug: "telemarketing-setelah-uu-pdp-menelepon-hanya-yang-sudah-setuju",
-    title: "Telemarketing Setelah UU PDP: Menelepon Hanya yang Sudah Setuju",
+    slug: "telemarketing-after-the-pdp-law-call-only-people-who-agreed",
+    title: "Telemarketing After the PDP Law: Call Only the People Who Agreed",
     excerpt:
-      "UU Pelindungan Data Pribadi mengubah cara perusahaan boleh menghubungi calon nasabah. Model berbasis consent membuat tim telemarketing tetap produktif tanpa menambah risiko hukum.",
-    category: "Akuisisi Nasabah",
+      "Indonesia's Personal Data Protection Law changes how companies may contact prospects. A consent-based model keeps telemarketing teams productive without adding legal risk.",
+    category: "Lead Generation",
     date: "2026-11-15",
     readTime: 4,
     featured: true,
-    content: `<p>Selama bertahun-tahun, telemarketing berjalan dengan pola yang sama: beli daftar nomor, telepon satu per satu, dan berharap sebagian kecil mau mendengarkan. Pola ini makin sulit dipertahankan, baik dari sisi biaya maupun dari sisi hukum.</p>
+    content: `<p>For years telemarketing followed the same pattern: buy a list of numbers, call them one by one, and hope a small share will listen. That pattern is getting harder to defend, on cost and on legal grounds.</p>
 
-<h2>Apa yang berubah dengan UU PDP</h2>
+<h2>What the PDP Law changes</h2>
 
-<p>UU Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi mewajibkan pemrosesan data pribadi punya dasar yang sah, dan salah satu dasar utamanya adalah persetujuan yang eksplisit dari pemilik data. Pelanggaran dapat dikenai sanksi administratif, termasuk denda paling tinggi 2 persen dari pendapatan tahunan.</p>
+<p>Law No. 27 of 2022 on Personal Data Protection requires a lawful basis for processing personal data, and one of the main bases is the explicit consent of the data subject. Violations can lead to administrative sanctions, including a fine of up to 2 percent of annual revenue.</p>
 
-<p>Bagi perusahaan yang mengandalkan daftar nomor dari pihak ketiga, pertanyaannya sederhana: apakah setiap orang di daftar itu pernah setuju dihubungi untuk penawaran ini?</p>
+<p>For companies that rely on third-party lists, the question is simple: did every person on that list ever agree to be contacted about this offer?</p>
 
-<h2>Model berbasis consent</h2>
+<h2>The consent-based model</h2>
 
-<p>Dalam model berbasis consent, urutannya dibalik. Persetujuan diminta lebih dulu, baru kemudian agen menelepon.</p>
+<p>In a consent-based model the order is reversed. Consent is requested first, and only then does an agent call.</p>
 
 <ul>
-  <li><strong>Saring</strong>: profil yang sesuai target disaring sebelum ada pesan yang dikirim.</li>
-  <li><strong>Tawarkan</strong>: penawaran dikirim lewat WhatsApp resmi yang terverifikasi. Penerima memilih sendiri dengan menekan tombol tertarik.</li>
-  <li><strong>Serahkan</strong>: hanya nomor yang sudah memberi persetujuan yang diteruskan ke tim telemarketing.</li>
+  <li><strong>Curate</strong>: profiles that fit the target are filtered before any message is sent.</li>
+  <li><strong>Offer</strong>: the offer goes out through a verified WhatsApp business account. Recipients choose for themselves by tapping to say they are interested.</li>
+  <li><strong>Hand over</strong>: only numbers that gave consent are passed to the telemarketing team.</li>
 </ul>
 
-<h2>Dampaknya untuk tim</h2>
+<h2>What it means for the team</h2>
 
-<p>Agen tidak lagi menghabiskan jam kerja untuk nomor mati dan penolakan. Setiap panggilan ditujukan kepada orang yang memang menunggu penjelasan. Persetujuan tercatat secara digital, sehingga ada jejak yang bisa ditunjukkan saat audit.</p>
+<p>Agents stop spending their day on dead numbers and rejections. Every call goes to someone who is expecting an explanation. Consent is recorded digitally, so there is a trail to show during an audit.</p>
 
-<p>Cara paling aman untuk memulai adalah pilot kecil dengan jumlah data terbatas, lalu membandingkan biaya per nasabah baru dengan metode lama sebelum menaikkan volume.</p>
+<p>The safest way to start is a small pilot with a limited database, comparing the cost per new customer with the old method before increasing volume.</p>
 
-<p><em>Artikel ini bukan nasihat hukum. Konsultasikan penerapan UU PDP di perusahaan Anda dengan penasihat hukum.</em></p>`,
+<p><em>This article is not legal advice. Discuss how the PDP Law applies to your company with your legal counsel.</em></p>`,
   },
   {
-    slug: "agent-ai-yang-terhubung-ke-crm-dari-percakapan-ke-prospek",
-    title: "Agent AI yang Terhubung ke CRM: Dari Percakapan ke Prospek",
+    slug: "ai-agents-connected-to-your-crm-from-conversation-to-lead",
+    title: "AI Agents Connected to Your CRM: From Conversation to Lead",
     excerpt:
-      "Chatbot yang hanya menjawab pertanyaan berhenti di percakapan. Agent AI yang terhubung ke CRM mencatat siapa yang bertanya, apa kebutuhannya, dan apa langkah berikutnya.",
+      "A chatbot that only answers questions stops at the conversation. An AI agent connected to the CRM records who asked, what they need, and what happens next.",
     category: "AI Agent",
     date: "2026-11-15",
     readTime: 4,
-    content: `<p>Banyak perusahaan sudah memasang chatbot di situs web atau WhatsApp. Masalahnya, percakapan sering berakhir begitu saja: pengunjung mendapat jawaban, lalu pergi, dan tim penjualan tidak pernah tahu ada yang bertanya.</p>
+    content: `<p>Many companies already run a chatbot on their website or WhatsApp. The problem is that conversations often just end: the visitor gets an answer and leaves, and the sales team never learns that anyone asked.</p>
 
-<h2>Bedanya agent yang terhubung ke CRM</h2>
+<h2>What changes when the agent is connected to the CRM</h2>
 
-<p>Agent AI yang terhubung ke CRM melakukan dua hal sekaligus. Ia menjawab pengunjung dengan pengetahuan bisnis Anda, dan pada saat yang sama mengisi catatan prospek: sumber, minat, kontak, dan tindak lanjut yang dijanjikan.</p>
+<p>An AI agent connected to the CRM does two things at once. It answers the visitor using your business knowledge, and it fills in the lead record at the same time: source, interest, contact details and the promised follow-up.</p>
 
 <ul>
-  <li><strong>Tidak ada prospek yang hilang</strong>: setiap percakapan yang menunjukkan minat tercatat otomatis.</li>
-  <li><strong>Konteks ikut berpindah</strong>: saat tim penjualan menelepon, mereka sudah tahu apa yang ditanyakan.</li>
-  <li><strong>Satu sumber data</strong>: formulir kontak, WhatsApp, dan agent di situs menulis ke tempat yang sama.</li>
+  <li><strong>No lead is lost</strong>: every conversation that shows interest is recorded automatically.</li>
+  <li><strong>Context travels with the lead</strong>: when sales calls, they already know what was asked.</li>
+  <li><strong>One source of data</strong>: the contact form, WhatsApp and the website agent all write to the same place.</li>
 </ul>
 
-<h2>Yang perlu disiapkan</h2>
+<h2>What to prepare</h2>
 
-<p>Tiga hal menentukan berhasil atau tidaknya implementasi: pengetahuan yang rapi untuk melatih agent, definisi yang jelas tentang kapan sebuah percakapan dianggap prospek, dan aturan kapan agent harus menyerahkan percakapan ke manusia.</p>
+<p>Three things decide whether an implementation works: tidy knowledge to train the agent on, a clear definition of when a conversation counts as a lead, and rules for when the agent hands the conversation to a person.</p>
 
-<h2>Mulai dari satu alur</h2>
+<h2>Start with one flow</h2>
 
-<p>Implementasi yang berhasil biasanya dimulai dari satu alur yang paling sering terjadi, misalnya pertanyaan harga atau permintaan demo. Setelah alur itu stabil dan datanya masuk ke CRM dengan benar, alur lain ditambahkan satu per satu.</p>
+<p>Successful implementations usually start with the single most common flow, such as pricing questions or demo requests. Once that flow is stable and the data reaches the CRM correctly, other flows are added one at a time.</p>
 
-<p>Enklaris mengimplementasikan agent AI percakapan bersama mitra teknologinya, dari perancangan alur sampai integrasi ke sistem yang sudah Anda pakai.</p>`,
+<p>Enklaris implements conversational AI agents from flow design through to integration with the systems you already use. <a href="/#contact">Talk to our team</a>.</p>`,
   },
   {
-    slug: "menilai-lahan-dengan-data-peta-dan-ai",
-    title: "Menilai Lahan dengan Data, Peta, dan AI",
+    slug: "why-indonesian-businesses-need-the-whatsapp-business-api",
+    title: "Why Indonesian Businesses Need the WhatsApp Business API",
     excerpt:
-      "Keputusan properti sering dibuat dengan data yang tersebar di banyak tempat. Sistem informasi lahan menyatukan data, peta, dan analisis dalam satu tampilan.",
-    category: "Geo Analytics",
-    date: "2026-11-15",
-    readTime: 3,
-    content: `<p>Menilai sebidang lahan berarti menjawab banyak pertanyaan sekaligus: di mana letaknya, apa yang ada di sekitarnya, berapa nilai wajarnya, dan bagaimana prospeknya. Jawabannya biasanya tersebar di dokumen, spreadsheet, dan ingatan orang lapangan.</p>
-
-<h2>Satu sistem untuk informasi lahan</h2>
-
-<p>Sistem informasi lahan menggabungkan tiga hal: data properti yang lengkap, peta yang mudah dibaca, dan AI yang membantu menilai. Hasilnya adalah satu tampilan tempat tim bisa melihat lokasi, membandingkan, dan mengambil keputusan.</p>
-
-<h2>Dua penggunaan yang paling umum</h2>
-
-<ul>
-  <li><strong>Penilaian lahan</strong>: membandingkan beberapa lokasi sebelum membeli, menyewa, atau membangun.</li>
-  <li><strong>Manajemen properti</strong>: memantau portofolio yang sudah dimiliki dalam satu peta, lengkap dengan data tiap aset.</li>
-</ul>
-
-<h2>Siapa yang terbantu</h2>
-
-<p>Pengembang properti, pemilik portofolio aset, dan tim ekspansi bisnis yang harus memilih lokasi adalah pengguna yang paling merasakan manfaatnya, karena keputusan mereka bergantung pada lokasi.</p>
-
-<p>Enklaris mengimplementasikan solusi penilaian lahan dan manajemen properti bersama mitra teknologinya, disesuaikan dengan data dan proses yang sudah berjalan di perusahaan Anda.</p>`,
-  },
-  {
-    slug: "mengapa-bisnis-indonesia-butuh-whatsapp-business-api",
-    title: "Mengapa Bisnis Indonesia Perlu WhatsApp Business API di 2025",
-    excerpt:
-      "Lebih dari 186 juta orang Indonesia aktif menggunakan WhatsApp setiap hari. Tapi ada perbedaan besar antara WhatsApp biasa dan WhatsApp Business API — dan perbedaan itu bisa menentukan skala bisnis Anda.",
-    content: `<p>Lebih dari 186 juta orang Indonesia menggunakan WhatsApp setiap hari. Angka ini bukan sekadar statistik — ini adalah realitas komunikasi bisnis di Indonesia. Ketika pelanggan ingin menghubungi sebuah brand, channel pertama yang mereka buka hampir selalu adalah WhatsApp.</p>
-
-<h2>WhatsApp Biasa vs WhatsApp Business API: Apa Bedanya?</h2>
-
-<p>Banyak bisnis sudah menggunakan WhatsApp Business (aplikasi), tapi ada batasan signifikan: satu nomor untuk satu perangkat, tidak ada integrasi dengan sistem internal, dan tidak ada kemampuan broadcast yang terstruktur. WhatsApp Business API adalah infrastruktur yang berbeda.</p>
-
-<ul>
-  <li><strong>Multi-agent access</strong> — tim customer service bisa menangani chat dari satu nomor bisnis secara bersamaan</li>
-  <li><strong>Automated messaging</strong> — integrasi dengan CRM, ERP, atau sistem internal untuk pesan otomatis berdasarkan trigger</li>
-  <li><strong>Official business profile</strong> — tampil dengan centang hijau yang meningkatkan kepercayaan pelanggan</li>
-  <li><strong>Broadcast terstruktur</strong> — kirim template message ke ribuan kontak dengan compliance penuh</li>
-  <li><strong>Analytics</strong> — lacak delivery rate, open rate, dan engagement secara granular</li>
-</ul>
-
-<h2>Mengapa 2025 Adalah Momentum yang Tepat</h2>
-
-<p>Beberapa faktor membuat adopsi WhatsApp Business API semakin mendesak tahun ini. Pertama, Meta telah menyederhanakan pricing model-nya — biaya percakapan kini lebih transparan dan terjangkau untuk skala enterprise. Kedua, kompetitor di berbagai industri sudah bergerak lebih cepat: brand retail, perbankan, dan healthcare mulai mengotomatisasi customer journey mereka via WhatsApp.</p>
-
-<p>Kedua, regulasi perlindungan data (UU PDP Indonesia) mendorong bisnis untuk menggunakan channel komunikasi yang memiliki enkripsi end-to-end dan audit trail yang jelas — sesuatu yang disediakan oleh WhatsApp Business API melalui Business Solution Provider (BSP) resmi.</p>
-
-<h2>Use Case yang Paling Berdampak</h2>
-
-<p>Dari pengalaman implementasi di berbagai sektor, tiga use case ini memberikan ROI tercepat:</p>
-
-<ol>
-  <li><strong>Order confirmation & tracking</strong> — notifikasi otomatis mengurangi beban call center hingga 40%</li>
-  <li><strong>Re-engagement campaign</strong> — template message dengan personalisasi meningkatkan open rate 3-5x dibanding email</li>
-  <li><strong>Customer support tier-1</strong> — integrasi dengan AI Agent untuk menjawab pertanyaan umum 24/7</li>
-</ol>
-
-<h2>Yang Perlu Dipersiapkan Sebelum Implementasi</h2>
-
-<p>Adopsi WhatsApp Business API bukan sekadar memasang nomor baru. Bisnis perlu memiliki: strategi konten untuk template message yang akan disetujui Meta, infrastruktur backend untuk integrasi API, dan proses onboarding agent yang jelas. Tanpa persiapan ini, implementasi bisa terhambat di tengah jalan.</p>
-
-<p>Jika Anda sedang mengevaluasi apakah WhatsApp Business API relevan untuk operasi bisnis Anda, kami senang mendiskusikan lebih lanjut. <a href="/#kontak-form">Hubungi tim Enklaris</a> untuk konsultasi awal tanpa komitmen.</p>`,
+      "WhatsApp is where most Indonesian customers expect to reach a brand. The gap between the regular app and the WhatsApp Business API can decide how far your operation scales.",
     category: "WhatsApp API",
     date: "2026-04-15",
     readTime: 4,
     featured: false,
-  },
-  {
-    slug: "ai-agent-vs-chatbot-apa-bedanya",
-    title: "AI Agent vs Chatbot: Apa Bedanya dan Mana yang Tepat untuk Bisnis Anda?",
-    excerpt:
-      "Chatbot dan AI Agent sering disebut bergantian, padahal keduanya sangat berbeda dalam cara kerja dan kapabilitas. Memahami perbedaan ini penting sebelum Anda berinvestasi dalam solusi otomasi.",
-    content: `<p>Dua tahun terakhir, percakapan tentang otomasi bisnis hampir selalu berujung pada dua kata: chatbot atau AI Agent. Vendor teknologi sering menggunakannya bergantian dalam materi marketing, yang membuat keputusan pembelian menjadi membingungkan. Artikel ini mencoba meluruskan perbedaan yang esensial.</p>
+    content: `<p>WhatsApp is part of daily life for most people in Indonesia. When customers want to reach a brand, it is almost always the first channel they open.</p>
 
-<h2>Chatbot: Berbasis Aturan dan Script</h2>
+<h2>The WhatsApp Business app and the API are different things</h2>
 
-<p>Chatbot konvensional beroperasi berdasarkan decision tree yang telah diprogram sebelumnya. Ketika pengguna mengetik sesuatu, sistem mencari kecocokan dengan pola yang sudah ada, lalu memberikan respons yang telah ditentukan. Ini powerful untuk skenario yang terdefinisi dengan jelas — FAQ, booking sederhana, atau navigasi menu.</p>
-
-<p>Keterbatasannya muncul ketika pengguna keluar dari alur yang diharapkan. Pertanyaan yang sedikit berbeda dari training data akan menghasilkan jawaban yang tidak relevan, atau lebih buruk, loop yang membuat frustasi. Pemeliharaan juga intensif: setiap perubahan flow memerlukan update manual pada script.</p>
-
-<h2>AI Agent: Autonomous dan Goal-Oriented</h2>
-
-<p>AI Agent beroperasi secara fundamental berbeda. Alih-alih mengikuti script, AI Agent:</p>
+<p>Many businesses already use the WhatsApp Business app, but it has real limits: one number tied to one device, no integration with internal systems, and no structured broadcasting. The WhatsApp Business API is a different kind of infrastructure.</p>
 
 <ul>
-  <li><strong>Memahami intent</strong> secara natural language, bukan pattern matching</li>
-  <li><strong>Mengambil tindakan multi-langkah</strong> — bisa mengakses database, memanggil API, mengirim email, atau memperbarui CRM secara otonom</li>
-  <li><strong>Beradaptasi dengan konteks</strong> — mengingat history percakapan dan menyesuaikan respons</li>
-  <li><strong>Beroperasi tanpa batas channel</strong> — satu agent bisa bekerja di WhatsApp, web chat, dan email sekaligus</li>
+  <li><strong>Multi-agent access</strong>: a customer service team can handle chats from one business number at the same time.</li>
+  <li><strong>Automated messaging</strong>: integration with your CRM, ERP or internal systems, with messages triggered by events.</li>
+  <li><strong>Verified business profile</strong>: an official account that customers can trust.</li>
+  <li><strong>Structured broadcasts</strong>: approved template messages sent to opted-in contacts.</li>
+  <li><strong>Analytics</strong>: delivery and engagement tracked in detail.</li>
 </ul>
 
-<p>Dalam konteks bisnis, AI Agent bisa menangani skenario seperti: pelanggan bertanya tentang status pesanan, agent mengecek database secara real-time, menemukan ada delay pengiriman, lalu secara proaktif menawarkan kompensasi sesuai policy yang berlaku — semua tanpa intervensi manusia.</p>
+<h2>Why now</h2>
 
-<h2>Framework Keputusan: Mana yang Tepat untuk Anda?</h2>
+<p>Meta's pricing has become easier to understand, which makes costs more predictable at enterprise scale. Competitors in retail, banking and healthcare are already automating parts of their customer journey on WhatsApp.</p>
 
-<p>Pertanyaan yang tepat bukan "mana yang lebih baik," tapi "mana yang sesuai dengan kompleksitas kebutuhan Anda saat ini."</p>
+<p>Indonesia's Personal Data Protection Law also pushes businesses toward channels with end-to-end encryption and a clear audit trail, which the WhatsApp Business API provides through official Business Solution Providers.</p>
 
-<p>Pertimbangkan <strong>chatbot</strong> jika: use case Anda terdefinisi sempit, volume interaksi sedang, dan tim Anda tidak memiliki kapasitas untuk memelihara model AI. Chatbot lebih cepat di-deploy dan lebih predictable.</p>
+<h2>Use cases that pay back fastest</h2>
 
-<p>Pertimbangkan <strong>AI Agent</strong> jika: Anda perlu menangani skenario yang kompleks dan tidak terstruktur, integrasi dengan multiple sistem, atau volume interaksi yang sangat tinggi dengan ekspektasi kualitas yang tinggi.</p>
+<ol>
+  <li><strong>Order confirmation and tracking</strong>: automatic notifications take routine questions away from the call centre.</li>
+  <li><strong>Re-engagement campaigns</strong>: personalised template messages reach customers where they already read their messages.</li>
+  <li><strong>First-line customer support</strong>: an AI agent answers common questions around the clock.</li>
+</ol>
 
-<h2>Tren 2025: Hybrid Architecture</h2>
+<h2>What to prepare before you start</h2>
 
-<p>Banyak enterprise di Indonesia kini bergerak menuju arsitektur hybrid — chatbot untuk tier-1 yang terdefinisi, AI Agent untuk eskalasi dan skenario kompleks. Ini memberikan keseimbangan antara biaya, kecepatan implementasi, dan kualitas pengalaman pengguna.</p>
+<p>Adopting the WhatsApp Business API is more than registering a new number. You need a content plan for the template messages Meta will review, backend infrastructure for the API integration, and a clear onboarding process for agents.</p>
 
-<p>Apakah Anda sedang mengevaluasi strategi otomasi untuk bisnis Anda? <a href="/#kontak-form">Diskusikan kebutuhan Anda dengan tim kami</a> — kami senang membantu memetakan solusi yang tepat untuk konteks spesifik Anda.</p>`,
+<p>If you are weighing whether the WhatsApp Business API fits your operation, <a href="/#contact">talk to the Enklaris team</a>.</p>`,
+  },
+  {
+    slug: "ai-agent-vs-chatbot-which-one-fits-your-business",
+    title: "AI Agent vs Chatbot: Which One Fits Your Business?",
+    excerpt:
+      "Chatbot and AI agent are often used as if they mean the same thing, but they work very differently. Knowing the difference matters before you invest in automation.",
     category: "AI Agent",
     date: "2026-04-10",
     readTime: 5,
     featured: false,
-  },
-  {
-    slug: "geo-analytics-brand-retail-memahami-pelanggan-berdasarkan-lokasi",
-    title: "Geo Analytics: Cara Brand Retail Memahami Perilaku Pelanggan Berdasarkan Lokasi",
-    excerpt:
-      "Data lokasi adalah salah satu sinyal paling kaya yang dimiliki brand retail, namun sering kali kurang dimanfaatkan. Geo analytics mengubah koordinat GPS menjadi insight strategis yang dapat ditindaklanjuti.",
-    content: `<p>Bayangkan Anda memiliki ratusan toko yang tersebar di seluruh Indonesia. Anda tahu berapa penjualan tiap toko, tapi apakah Anda tahu mengapa toko di satu lokasi tumbuh dua kali lebih cepat dari toko lainnya? Atau mengapa store di pusat perbelanjaan tertentu underperform meski traffic mall-nya tinggi?</p>
+    content: `<p>Conversations about business automation tend to end on two words: chatbot or AI agent. Vendors often use them interchangeably, which makes buying decisions confusing. This article sets out the essential difference.</p>
 
-<p>Geo analytics memberikan dimensi baru untuk menjawab pertanyaan-pertanyaan ini.</p>
+<h2>Chatbots follow rules and scripts</h2>
 
-<h2>Apa Itu Geo Analytics dalam Konteks Retail?</h2>
+<p>A conventional chatbot runs on a decision tree written in advance. When a user types something, the system looks for a matching pattern and returns the prepared response. That works well for clearly defined scenarios such as FAQs, simple bookings or menu navigation.</p>
 
-<p>Geo analytics adalah proses menganalisis data yang memiliki komponen spasial — lokasi toko, pergerakan pelanggan, kepadatan populasi, posisi kompetitor, dan banyak lagi — untuk menghasilkan insight bisnis yang tidak bisa didapatkan dari data tabular biasa.</p>
+<p>The limits show when users step outside the expected path. A slightly different question can produce an irrelevant answer or a frustrating loop. Maintenance is heavy too: every change to a flow means updating the script by hand.</p>
 
-<p>Ini bukan sekadar memetakan lokasi toko di peta. Geo analytics modern menggabungkan berbagai data layer:</p>
+<h2>AI agents work toward a goal</h2>
+
+<p>An AI agent works in a different way. Instead of following a script, it:</p>
 
 <ul>
-  <li><strong>Mobility data</strong> — pola pergerakan orang di sekitar toko</li>
-  <li><strong>Demographic data</strong> — profil penduduk di radius tertentu</li>
-  <li><strong>Points of Interest (POI)</strong> — keberadaan kompetitor, transportasi publik, pusat keramaian</li>
-  <li><strong>Transactional data</strong> — menghubungkan lokasi transaksi dengan profil pelanggan</li>
+  <li><strong>Understands intent</strong> in natural language, without pattern matching.</li>
+  <li><strong>Takes multi-step actions</strong>: it can query a database, call an API, send an email or update the CRM.</li>
+  <li><strong>Adapts to context</strong>: it remembers the conversation and adjusts its replies.</li>
+  <li><strong>Works across channels</strong>: one agent can serve WhatsApp, web chat and email.</li>
 </ul>
 
-<h2>Use Case Nyata: Catchment Area Analysis</h2>
+<p>In practice: a customer asks about an order, the agent checks the database, finds a delivery delay and offers compensation under the policy in force, with no person involved.</p>
 
-<p>Salah satu aplikasi paling berharga adalah analisis catchment area — memahami dari mana sebenarnya pelanggan toko Anda berasal. Hasilnya sering mengejutkan: banyak toko yang "catchment area"-nya tumpang tindih dengan toko lain dalam jaringan yang sama, menciptakan kannibalisasi internal yang tidak terdeteksi.</p>
+<h2>How to decide</h2>
 
-<p>Dengan pemahaman ini, keputusan pembukaan toko baru menjadi berbasis data, bukan intuisi semata.</p>
+<p>The useful question is which one matches the complexity of what you need today.</p>
 
-<h2>Memahami Kompetitor Melalui Lens Lokasi</h2>
+<p>Consider a <strong>chatbot</strong> if your use case is narrow, volume is moderate, and your team cannot maintain an AI model. Chatbots are faster to deploy and more predictable.</p>
 
-<p>Geo analytics juga memungkinkan analisis kompetitif yang lebih tajam. Seberapa dekat toko kompetitor dengan toko Anda? Apakah ada korelasi antara kedekatan kompetitor dengan penurunan penjualan? Di segmen mana kompetitor lebih kuat secara geografis?</p>
+<p>Consider an <strong>AI agent</strong> if you need to handle complex or unstructured scenarios, connect several systems, or serve very high volumes with high quality expectations.</p>
 
-<p>Brand retail yang menggunakan geo analytics secara konsisten mampu merespons ekspansi kompetitor dengan lebih cepat dan lebih terukur.</p>
+<h2>Many teams combine both</h2>
 
-<h2>Personalisasi Berbasis Lokasi</h2>
+<p>A common pattern is a hybrid: a chatbot for well-defined first-line questions, and an AI agent for escalations and complex cases. It balances cost, speed of implementation and quality of experience.</p>
 
-<p>Di level pelanggan individual, geo analytics memungkinkan personalisasi yang lebih relevan. Push notification yang dikirim ketika pelanggan berada dalam radius tertentu dari toko, penawaran yang disesuaikan dengan toko terdekat mereka, atau routing yang optimal untuk program delivery — semua ini ditenagai oleh data lokasi yang diproses dengan baik.</p>
-
-<h2>Mulai dari Mana?</h2>
-
-<p>Implementasi geo analytics tidak harus dimulai dari yang paling kompleks. Langkah awal yang paling sering memberikan value tercepat adalah: visualisasi performa toko dalam konteks spasial, dan korelasi sederhana antara karakteristik lokasi dengan metrik bisnis.</p>
-
-<p>Jika Anda ingin mengeksplorasi bagaimana geo analytics dapat diterapkan untuk jaringan retail atau distribusi Anda, <a href="/#kontak-form">tim Enklaris siap berdiskusi</a>.</p>`,
-    category: "Geo Analytics",
-    date: "2026-03-28",
-    readTime: 5,
-    featured: false,
+<p>Evaluating an automation strategy? <a href="/#contact">Discuss your needs with our team</a>.</p>`,
   },
   {
-    slug: "cara-memilih-mitra-integrasi-teknologi-untuk-enterprise",
-    title: "Cara Memilih Mitra Integrasi Teknologi yang Tepat untuk Enterprise",
+    slug: "how-to-choose-a-technology-integration-partner",
+    title: "How to Choose a Technology Integration Partner",
     excerpt:
-      "Memilih technology partner bukan hanya soal harga dan portofolio. Keputusan ini berdampak jangka panjang pada infrastruktur, tim, dan kemampuan adaptasi bisnis Anda.",
-    content: `<p>Setiap tahun, perusahaan-perusahaan di Indonesia menghabiskan miliaran rupiah untuk proyek integrasi teknologi. Namun survei demi survei menunjukkan bahwa lebih dari separuh proyek IT gagal memenuhi ekspektasi awal — baik dari sisi timeline, budget, maupun hasil akhir.</p>
-
-<p>Salah satu faktor terbesar yang menentukan keberhasilan atau kegagalan proyek ini adalah pemilihan mitra teknologi.</p>
-
-<h2>Kriteria 1: Kedalaman Teknis, Bukan Hanya Lebar Portofolio</h2>
-
-<p>Banyak vendor menawarkan daftar teknologi yang panjang, tapi yang lebih penting adalah kedalaman keahlian di area yang Anda butuhkan. Tanyakan berapa engineer yang benar-benar berpengalaman dengan teknologi spesifik yang akan digunakan. Minta untuk bertemu dengan tim teknis yang akan mengerjakan proyek Anda, bukan hanya tim sales.</p>
-
-<p>Red flag: vendor yang tidak bisa menjawab pertanyaan teknis spesifik, atau selalu menjawab "kami bisa handle itu" tanpa penjelasan konkret.</p>
-
-<h2>Kriteria 2: Rekam Jejak di Industri dan Skala yang Relevan</h2>
-
-<p>Implementasi WhatsApp Business API untuk e-commerce dengan 10 juta transaksi per bulan sangat berbeda dengan implementasi untuk perusahaan B2B dengan 500 pelanggan enterprise. Pastikan vendor memiliki case study yang relevan — bukan hanya nama klien besar, tapi detail tentang tantangan yang dihadapi dan bagaimana mereka menyelesaikannya.</p>
-
-<h2>Kriteria 3: Model Keterlibatan yang Transparan</h2>
-
-<p>Bagaimana vendor mendefinisikan scope? Bagaimana mereka menangani change request? Apa yang terjadi ketika ada bug pasca go-live? Pertanyaan-pertanyaan ini perlu dijawab sebelum kontrak ditandatangani, bukan setelah. Vendor yang baik akan memiliki jawaban yang jelas dan tertulis untuk semua ini.</p>
-
-<h2>Kriteria 4: Kemampuan Transfer Knowledge</h2>
-
-<p>Ketergantungan jangka panjang pada vendor adalah risiko bisnis. Mitra yang baik tidak hanya menyelesaikan proyek — mereka memastikan tim internal Anda memahami apa yang dibangun dan mampu mengelolanya secara mandiri. Tanya tentang dokumentasi, training, dan support model pasca implementasi.</p>
-
-<h2>Kriteria 5: Kultur dan Cara Berkomunikasi</h2>
-
-<p>Proyek integrasi teknologi melibatkan kolaborasi intensif selama berbulan-bulan. Cara vendor berkomunikasi — apakah mereka responsif, apakah mereka jujur tentang hambatan, apakah mereka membawa solusi atau menunggu instruksi — akan sangat mempengaruhi kualitas hubungan kerja dan hasil akhir.</p>
-
-<h2>Pertanyaan untuk Diajukan dalam Proses Evaluasi</h2>
-
-<ul>
-  <li>Ceritakan tentang proyek yang tidak berjalan sesuai rencana dan bagaimana Anda mengatasinya</li>
-  <li>Bagaimana Anda menangani perbedaan interpretasi terhadap requirement?</li>
-  <li>Siapa yang akan menjadi single point of contact dari sisi Anda?</li>
-  <li>Berapa lama typical timeline untuk proyek dengan scope serupa?</li>
-</ul>
-
-<p>Di Enklaris, kami percaya bahwa transparansi adalah fondasi dari hubungan kerja yang baik. Jika Anda sedang dalam proses evaluasi mitra teknologi, <a href="/#kontak-form">kami terbuka untuk berdiskusi</a> — termasuk tentang hal-hal yang tidak bisa kami bantu.</p>`,
+      "Choosing a technology partner is about more than price and portfolio. The decision shapes your infrastructure, your team and your ability to adapt for years.",
     category: "Industry Insights",
     date: "2026-03-22",
     readTime: 5,
     featured: false,
-  },
-  {
-    slug: "membangun-customer-journey-otomatis-whatsapp-api-ai-agent",
-    title: "Membangun Customer Journey Otomatis dengan WhatsApp API + AI Agent",
-    excerpt:
-      "Kombinasi WhatsApp Business API dan AI Agent memungkinkan otomasi customer journey yang seamless — dari awareness hingga retention — tanpa mengorbankan kualitas interaksi.",
-    content: `<p>Customer journey yang baik bukan hanya tentang touchpoint yang banyak — ini tentang touchpoint yang tepat, di waktu yang tepat, dengan pesan yang relevan. Di sinilah kombinasi WhatsApp Business API dan AI Agent menjadi powerful: keduanya saling melengkapi untuk menciptakan pengalaman yang terasa personal tapi berjalan secara otomatis.</p>
+    content: `<p>Companies spend heavily on technology integration projects every year, and many of those projects miss their original timeline, budget or outcome. One of the biggest factors in how a project turns out is the choice of partner.</p>
 
-<h2>Arsitektur Dasarnya</h2>
+<h2>1. Technical depth, not a long list</h2>
 
-<p>Sebelum masuk ke use case, penting untuk memahami bagaimana keduanya bekerja bersama:</p>
+<p>Many vendors show a long list of technologies. What matters more is depth in the area you need. Ask how many engineers have real experience with the specific technology, and ask to meet the technical team that will do the work, not only the sales team.</p>
+
+<p>A warning sign: a vendor that cannot answer specific technical questions, or always says "we can handle that" without detail.</p>
+
+<h2>2. A track record at your scale and in your industry</h2>
+
+<p>Implementing the WhatsApp Business API for an e-commerce company with millions of transactions is very different from doing it for a B2B company with a few hundred enterprise customers. Look for relevant case studies with detail on the problems faced and how they were solved.</p>
+
+<h2>3. A transparent engagement model</h2>
+
+<p>How does the vendor define scope? How are change requests handled? What happens when a bug appears after go-live? These questions need written answers before a contract is signed.</p>
+
+<h2>4. Knowledge transfer</h2>
+
+<p>Long-term dependence on a vendor is a business risk. A good partner makes sure your internal team understands what was built and can run it. Ask about documentation, training and the support model after implementation.</p>
+
+<h2>5. Culture and communication</h2>
+
+<p>Integration projects mean months of close collaboration. Whether a vendor is responsive, honest about obstacles and brings solutions will shape the working relationship and the result.</p>
+
+<h2>Questions to ask during evaluation</h2>
 
 <ul>
-  <li><strong>WhatsApp Business API</strong> menjadi channel komunikasi — menerima dan mengirim pesan, mengelola session, menangani media</li>
-  <li><strong>AI Agent</strong> menjadi otak di balik percakapan — memahami intent, mengambil tindakan, berkoordinasi dengan sistem backend</li>
-  <li><strong>Middleware/Orchestration layer</strong> menghubungkan keduanya dengan CRM, database, dan sistem lain</li>
+  <li>Tell us about a project that did not go to plan and how you handled it.</li>
+  <li>How do you handle different interpretations of a requirement?</li>
+  <li>Who will be our single point of contact?</li>
+  <li>What is a typical timeline for a project of similar scope?</li>
 </ul>
 
-<h2>Stage 1: Acquisition dan First Contact</h2>
-
-<p>Ketika prospek pertama kali menghubungi melalui WhatsApp — baik dari iklan, QR code, atau link — AI Agent menerima mereka dengan welcome message yang dipersonalisasi. Agent bisa langsung mengidentifikasi konteks: dari mana mereka datang, produk apa yang mereka minati, dan apa yang mereka butuhkan selanjutnya.</p>
-
-<p>Ini bukan chatbot yang menampilkan menu pilihan — AI Agent melakukan percakapan yang natural dan mengumpulkan informasi yang relevan secara organik.</p>
-
-<h2>Stage 2: Qualification dan Nurturing</h2>
-
-<p>Untuk bisnis B2B atau dengan siklus penjualan yang panjang, AI Agent dapat menjalankan proses qualification secara otomatis: menggali pain point, memahami timeline, dan menilai kesiapan untuk pembelian. Berdasarkan hasilnya, agent memutuskan apakah prospek perlu dirouting ke sales team atau masuk ke nurturing sequence.</p>
-
-<p>Nurturing via WhatsApp memiliki keunggulan dibanding email: open rate yang jauh lebih tinggi dan respons yang lebih cepat.</p>
-
-<h2>Stage 3: Konversi dan Onboarding</h2>
-
-<p>Ketika pelanggan siap untuk bergerak maju, AI Agent dapat memfasilitasi langkah-langkah selanjutnya: mengatur jadwal demo, mengirimkan dokumen, bahkan memproses order untuk produk tertentu. Integrasi dengan payment gateway memungkinkan transaksi terjadi langsung di dalam percakapan WhatsApp.</p>
-
-<h2>Stage 4: Post-Purchase dan Retention</h2>
-
-<p>Inilah di mana banyak bisnis meninggalkan uang di atas meja. Setelah transaksi, AI Agent dapat menjalankan onboarding sequence, mengumpulkan feedback, mengirimkan pengingat, dan mendeteksi sinyal churn sejak dini.</p>
-
-<p>Sistem yang terintegrasi dengan baik dapat mendeteksi ketika seorang pelanggan sudah lama tidak aktif dan secara proaktif mengirimkan pesan yang relevan — bukan blast promosi generik, tapi komunikasi yang kontekstual.</p>
-
-<h2>Apa yang Perlu Disiapkan?</h2>
-
-<p>Implementasi yang berhasil memerlukan: mapping customer journey yang detail, integrasi data yang bersih, dan desain percakapan yang baik. Teknologinya sudah ada — yang membedakan hasil akhir adalah kualitas perencanaan di awal.</p>
-
-<p>Jika Anda ingin membahas bagaimana arsitektur ini bisa diterapkan untuk bisnis Anda, <a href="/#kontak-form">kami siap berdiskusi lebih lanjut</a>.</p>`,
+<p>At Enklaris we believe transparency is the basis of a good working relationship. If you are evaluating technology partners, <a href="/#contact">we are open to a conversation</a>, including about the things we cannot help with.</p>`,
+  },
+  {
+    slug: "building-an-automated-customer-journey-with-whatsapp-and-ai-agents",
+    title: "Building an Automated Customer Journey with WhatsApp and AI Agents",
+    excerpt:
+      "Together, the WhatsApp Business API and an AI agent can automate the customer journey from first contact to retention without giving up the quality of each interaction.",
     category: "WhatsApp API",
     date: "2026-03-18",
     readTime: 5,
     featured: false,
-  },
-  {
-    slug: "dari-data-ke-keputusan-peran-geo-intelligence-ekspansi-bisnis",
-    title: "Dari Data ke Keputusan: Peran Geo Intelligence dalam Ekspansi Bisnis",
-    excerpt:
-      "Ekspansi bisnis ke wilayah baru adalah keputusan berisiko tinggi. Geo intelligence mengubah intuisi dan asumsi menjadi analisis berbasis bukti yang meningkatkan probabilitas keberhasilan.",
-    content: `<p>Keputusan ekspansi bisnis — membuka cabang baru, memasuki pasar regional, atau memperluas jaringan distribusi — sering kali masih bergantung pada intuisi eksekutif dan data yang tidak lengkap. Hasilnya bisa sangat mahal: investasi di lokasi yang salah, pasar yang terlalu kecil, atau persaingan yang tidak terantisipasi.</p>
+    content: `<p>A good customer journey is about the right touchpoint at the right time with a relevant message. This is where the WhatsApp Business API and an AI agent work well together: the experience feels personal while it runs automatically.</p>
 
-<p>Geo intelligence menawarkan pendekatan yang berbeda: membiarkan data spasial berbicara sebelum keputusan dibuat.</p>
-
-<h2>Apa yang Dimaksud dengan Geo Intelligence?</h2>
-
-<p>Geo intelligence adalah praktik menggabungkan analisis geospasial dengan business intelligence untuk mendukung pengambilan keputusan strategis. Ini melampaui GIS (Geographic Information System) tradisional yang hanya memvisualisasikan data di peta — geo intelligence mengintegrasikan multiple data source untuk menghasilkan insight yang dapat ditindaklanjuti.</p>
-
-<p>Data yang digunakan bisa sangat beragam:</p>
+<h2>The basic architecture</h2>
 
 <ul>
-  <li>Data demografis dan sosial ekonomi per wilayah</li>
-  <li>Pola mobilitas penduduk dari anonymized mobility data</li>
-  <li>Kepadatan dan distribusi kompetitor</li>
-  <li>Infrastruktur transportasi dan aksesibilitas</li>
-  <li>Data transaksional historis yang di-georeferenced</li>
+  <li><strong>The WhatsApp Business API</strong> is the channel: it sends and receives messages, manages sessions and handles media.</li>
+  <li><strong>The AI agent</strong> is the brain of the conversation: it understands intent, takes action and coordinates with backend systems.</li>
+  <li><strong>An orchestration layer</strong> connects both to the CRM, databases and other systems.</li>
 </ul>
 
-<h2>Memilih Lokasi Ekspansi yang Tepat</h2>
+<h2>Stage 1: acquisition and first contact</h2>
 
-<p>Untuk perusahaan yang sedang mempertimbangkan ekspansi fisik, geo intelligence memungkinkan scoring berbasis data untuk setiap kandidat lokasi. Faktor-faktor seperti kepadatan target demographic, jarak dari pusat pertumbuhan ekonomi, aksesibilitas, dan intensitas kompetisi dapat dikuantifikasi dan dibandingkan secara objektif.</p>
+<p>When a prospect first writes on WhatsApp, from an ad, a QR code or a link, the AI agent greets them with a relevant welcome. It can pick up context straight away: where they came from, which product interests them, and what they need next. The agent holds a natural conversation and collects the relevant information along the way.</p>
 
-<p>Sebuah perusahaan FMCG yang kami dampingi berhasil meningkatkan akurasi prediksi performa outlet baru dari 60% menjadi lebih dari 80% setelah mengadopsi pendekatan scoring berbasis geo intelligence.</p>
+<h2>Stage 2: qualification and nurturing</h2>
 
-<h2>Memahami Dinamika Pasar Regional</h2>
+<p>For B2B or long sales cycles, the agent can run qualification: exploring the problem, understanding the timeline and judging readiness to buy. Based on the result, it routes the prospect to the sales team or into a nurturing sequence.</p>
 
-<p>Indonesia adalah negara dengan heterogenitas yang luar biasa — preferensi konsumen, daya beli, dan perilaku belanja bisa sangat berbeda antara satu kabupaten dengan kabupaten tetangganya. Geo intelligence memungkinkan bisnis untuk tidak memperlakukan seluruh wilayah Indonesia sebagai satu pasar homogen.</p>
+<h2>Stage 3: conversion and onboarding</h2>
 
-<p>Segmentasi pasar berbasis geografi memungkinkan strategi go-to-market yang lebih presisi: produk yang tepat, harga yang tepat, dan channel distribusi yang tepat untuk setiap wilayah.</p>
+<p>When the customer is ready, the agent can arrange the next steps: scheduling a demo, sending documents, or processing an order for certain products. With a payment gateway connected, the transaction can happen inside the WhatsApp conversation.</p>
 
-<h2>Optimasi Jaringan Distribusi</h2>
+<h2>Stage 4: after the purchase</h2>
 
-<p>Selain ekspansi, geo intelligence juga sangat berharga untuk mengoptimalkan jaringan yang sudah ada. Analisis coverage gap menunjukkan di mana ada demand yang belum terlayani. Route optimization yang berbasis data spasial dapat mengurangi biaya logistik secara signifikan.</p>
+<p>This is where many businesses lose value. After the transaction, the agent can run an onboarding sequence, collect feedback, send reminders and spot early signs of churn. A well-integrated system notices when a customer has been inactive and sends a message that fits their context.</p>
 
-<h2>Dari Analisis ke Tindakan</h2>
+<h2>What to prepare</h2>
 
-<p>Nilai geo intelligence bukan dari peta yang indah, tapi dari keputusan yang lebih baik yang dihasilkannya. Implementasi yang efektif selalu dimulai dari pertanyaan bisnis yang spesifik: di mana sebaiknya kami buka toko berikutnya? Wilayah mana yang memiliki potensi terbesar yang belum tersentuh? Bagaimana mengoptimalkan rute distribusi kami?</p>
+<p>A successful implementation needs a detailed map of the customer journey, clean data integration and good conversation design. The technology exists; the quality of the planning decides the result.</p>
 
-<p>Jika Anda sedang merencanakan ekspansi atau ingin mengoptimalkan jaringan yang ada, <a href="/#kontak-form">tim geo analytics Enklaris siap membantu</a> memetakan jalannya.</p>`,
-    category: "Geo Analytics",
-    date: "2026-03-12",
-    readTime: 5,
-    featured: false,
+<p>To discuss how this architecture could work for your business, <a href="/#contact">get in touch</a>.</p>`,
   },
 ];
 
-export const CATEGORIES = [
-  "Semua",
-  "WhatsApp API",
-  "AI Agent",
-  "Database",
-  "Geo Analytics",
-  "Industry Insights",
-];
+export const CATEGORIES = ["All", "Lead Generation", "AI Agent", "WhatsApp API", "Industry Insights"];

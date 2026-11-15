@@ -64,12 +64,6 @@ export default function Home() {
           <SolutionStage />
           <div className="panels">
             <div className="film has-media panel">
-              <BgVideo src="/media/team.mp4" poster="/media/team.jpg" />
-              <h2>An implementation team that builds with you.</h2>
-              <p>We design the flows, connect your CRM and channels, and run the campaign alongside your sales team.</p>
-              <a className="pill pill-white" href="#contact">Talk to us</a>
-            </div>
-            <div className="film has-media panel">
               <BgVideo src="/media/abstract.mp4" poster="/media/abstract.jpg" />
               <h2>Start with a pilot.</h2>
               <p>Begin with a limited database and budget, compare cost per customer with your current method, then scale what works.</p>
