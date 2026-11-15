@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Tentang Kami — Enklaris",
-  description: "Enklaris adalah platform integrasi teknologi B2B yang membantu bisnis modern Indonesia tumbuh melalui WhatsApp Business API, AI Agent, Database Management, dan Geo Location Analysis.",
+  description: "Enklaris adalah platform integrasi teknologi B2B yang membantu bisnis modern Indonesia tumbuh melalui agent AI percakapan, akuisisi nasabah berbasis consent, dan analitik lahan.",
 };
 
 export default function TentangPage() {
@@ -11,12 +11,12 @@ export default function TentangPage() {
       {/* Hero */}
       <section
         className="relative pt-32 pb-20 px-6"
-        style={{ background: "linear-gradient(135deg, #0F0F1E 0%, #1A1A2E 100%)" }}
+        style={{ background: "linear-gradient(135deg, #1A0E23 0%, #2A1638 100%)" }}
       >
         <div className="max-w-4xl mx-auto text-center">
           <p
             className="text-xs font-mono-accent font-medium tracking-widest uppercase mb-4"
-            style={{ color: "#7BA7A0" }}
+            style={{ color: "#8E6BB0" }}
           >
             Tentang Kami
           </p>
@@ -24,7 +24,7 @@ export default function TentangPage() {
             className="text-4xl md:text-5xl font-jakarta font-extrabold text-white mb-6 leading-tight"
           >
             Membangun jembatan antara{" "}
-            <span style={{ color: "#7BA7A0" }}>teknologi dan bisnis</span>
+            <span style={{ color: "#8E6BB0" }}>teknologi dan bisnis</span>
           </h1>
           <p className="text-white/50 text-lg leading-relaxed max-w-2xl mx-auto">
             Enklaris hadir untuk membantu bisnis Indonesia menavigasi kompleksitas integrasi teknologi
@@ -34,13 +34,13 @@ export default function TentangPage() {
       </section>
 
       {/* Story */}
-      <section className="py-20 px-6" style={{ background: "#F8F6F1" }}>
+      <section className="py-20 px-6" style={{ background: "#FBFAFD" }}>
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
             <div>
               <p
                 className="text-xs font-mono-accent font-medium tracking-widest uppercase mb-4"
-                style={{ color: "#7BA7A0" }}
+                style={{ color: "#8E6BB0" }}
               >
                 Cerita Kami
               </p>
@@ -53,7 +53,7 @@ export default function TentangPage() {
                 tools, tapi solusi yang terintegrasi dengan cara bisnis Anda beroperasi.
               </p>
               <p className="text-muted text-sm leading-relaxed">
-                Dengan keahlian di bidang WhatsApp Business API, pengembangan AI Agent, manajemen database,
+                Dengan keahlian di bidang WhatsApp Business API, pengembangan AI Agent, akuisisi nasabah berbasis consent,
                 dan analisis geolokasi, kami membantu perusahaan di Indonesia meningkatkan efisiensi
                 operasional dan mengambil keputusan berbasis data yang lebih baik.
               </p>
@@ -79,7 +79,7 @@ export default function TentangPage() {
                 <div
                   key={item.title}
                   className="rounded-2xl p-6"
-                  style={{ background: "white", border: "1px solid rgba(26,26,46,0.06)" }}
+                  style={{ background: "white", border: "1px solid rgba(42,22,56,0.06)" }}
                 >
                   <div className="flex items-start gap-4">
                     <span className="text-2xl">{item.icon}</span>
@@ -96,10 +96,10 @@ export default function TentangPage() {
       </section>
 
       {/* Services overview */}
-      <section className="py-20 px-6" style={{ background: "#1A1A2E" }}>
+      <section className="py-20 px-6" style={{ background: "#2A1638" }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-xs font-mono-accent font-medium tracking-widest uppercase mb-4" style={{ color: "#7BA7A0" }}>
+            <p className="text-xs font-mono-accent font-medium tracking-widest uppercase mb-4" style={{ color: "#8E6BB0" }}>
               Keahlian Kami
             </p>
             <h2 className="text-3xl font-jakarta font-extrabold text-white">
@@ -110,13 +110,13 @@ export default function TentangPage() {
             {[
               { icon: "💬", title: "WhatsApp Business API", desc: "Template message, chatbot conversational, dan campaign management yang terverifikasi Meta." },
               { icon: "🤖", title: "AI Agent Development", desc: "Membangun agen AI yang memahami konteks bisnis Anda — dari customer service hingga workflow internal." },
-              { icon: "🗄️", title: "Database Management", desc: "Arsitektur, migrasi, dan optimasi database untuk performa dan keandalan maksimal." },
+              { icon: "✅", title: "Akuisisi Berbasis Consent", desc: "Tim telemarketing hanya menelepon orang yang sudah menyatakan tertarik, dengan persetujuan yang tercatat digital." },
               { icon: "📍", title: "Geo Location Analysis", desc: "Mengubah data lokasi menjadi insight bisnis yang actionable melalui heat mapping dan analisis spasial." },
             ].map((item) => (
               <div
                 key={item.title}
                 className="rounded-2xl p-6"
-                style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(123,167,160,0.15)" }}
+                style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(142,107,176,0.15)" }}
               >
                 <span className="text-2xl mb-3 block">{item.icon}</span>
                 <h4 className="font-jakarta font-bold text-white mb-2">{item.title}</h4>
@@ -128,11 +128,11 @@ export default function TentangPage() {
       </section>
 
       {/* Location */}
-      <section className="py-20 px-6" style={{ background: "#F8F6F1" }}>
+      <section className="py-20 px-6" style={{ background: "#FBFAFD" }}>
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-xs font-mono-accent font-medium tracking-widest uppercase mb-4" style={{ color: "#7BA7A0" }}>
+              <p className="text-xs font-mono-accent font-medium tracking-widest uppercase mb-4" style={{ color: "#8E6BB0" }}>
                 Lokasi
               </p>
               <h2 className="text-3xl font-jakarta font-extrabold text-obsidian mb-6">
@@ -144,7 +144,7 @@ export default function TentangPage() {
               </p>
               <div
                 className="rounded-2xl p-6"
-                style={{ background: "white", border: "1px solid rgba(26,26,46,0.06)" }}
+                style={{ background: "white", border: "1px solid rgba(42,22,56,0.06)" }}
               >
                 <div className="flex items-start gap-3">
                   <span className="text-xl mt-0.5">📍</span>
@@ -163,7 +163,7 @@ export default function TentangPage() {
             </div>
             <div
               className="rounded-3xl overflow-hidden"
-              style={{ background: "#1A1A2E", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center" }}
+              style={{ background: "#2A1638", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center" }}
             >
               <div className="text-center">
                 <div className="text-5xl mb-4">🗺️</div>
@@ -175,16 +175,16 @@ export default function TentangPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6" style={{ background: "#1A1A2E" }}>
+      <section className="py-20 px-6" style={{ background: "#2A1638" }}>
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-jakarta font-extrabold text-white mb-4">
             Siap bekerja sama?
           </h2>
           <p className="text-white/40 mb-8">Ceritakan kebutuhan bisnis Anda kepada kami.</p>
           <a
-            href="/#kontak-form"
+            href="/#contact"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-white transition-all duration-200 hover:scale-105"
-            style={{ background: "linear-gradient(135deg, #C17F5A, #d4956f)", fontSize: "1rem" }}
+            style={{ background: "linear-gradient(135deg, #6B3F8F, #8455A8)", fontSize: "1rem" }}
           >
             Mulai Diskusi →
           </a>

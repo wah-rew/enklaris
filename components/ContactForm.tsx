@@ -50,13 +50,13 @@ export default function ContactForm() {
         className="rounded-2xl p-10 text-center"
         style={{
           background: "white",
-          border: "1.5px solid rgba(123,167,160,0.3)",
-          boxShadow: "0 4px 24px rgba(123,167,160,0.08)",
+          border: "1.5px solid rgba(142,107,176,0.3)",
+          boxShadow: "0 4px 24px rgba(142,107,176,0.08)",
         }}
       >
         <div
           className="w-16 h-16 rounded-full flex items-center justify-center text-2xl mx-auto mb-5"
-          style={{ background: "rgba(123,167,160,0.12)", border: "1.5px solid rgba(123,167,160,0.3)" }}
+          style={{ background: "rgba(142,107,176,0.12)", border: "1.5px solid rgba(142,107,176,0.3)" }}
         >
           ✅
         </div>
@@ -72,8 +72,8 @@ export default function ContactForm() {
       className="rounded-2xl p-8 space-y-5"
       style={{
         background: "white",
-        border: "1.5px solid rgba(123,167,160,0.15)",
-        boxShadow: "0 4px 24px rgba(15,15,30,0.06)",
+        border: "1.5px solid rgba(142,107,176,0.15)",
+        boxShadow: "0 4px 24px rgba(26,14,35,0.06)",
       }}
     >
       <div>
@@ -85,7 +85,7 @@ export default function ContactForm() {
           onChange={(e) => setNama(e.target.value)}
           placeholder="Nama lengkap Anda"
           className={inputClass}
-          style={{ borderColor: "rgba(15,15,30,0.1)" }}
+          style={{ borderColor: "rgba(26,14,35,0.1)" }}
         />
       </div>
 
@@ -98,7 +98,7 @@ export default function ContactForm() {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="email@perusahaan.com"
           className={inputClass}
-          style={{ borderColor: "rgba(15,15,30,0.1)" }}
+          style={{ borderColor: "rgba(26,14,35,0.1)" }}
         />
       </div>
 
@@ -111,7 +111,7 @@ export default function ContactForm() {
           onChange={(e) => setNomorWA(e.target.value)}
           placeholder="08xxxxxxxxxx"
           className={inputClass}
-          style={{ borderColor: "rgba(15,15,30,0.1)" }}
+          style={{ borderColor: "rgba(26,14,35,0.1)" }}
         />
       </div>
 
@@ -124,7 +124,7 @@ export default function ContactForm() {
           placeholder="Ceritakan kebutuhan bisnis Anda — jenis integrasi, skala, timeline, dll."
           rows={4}
           className={inputClass}
-          style={{ borderColor: "rgba(15,15,30,0.1)", resize: "vertical" }}
+          style={{ borderColor: "rgba(26,14,35,0.1)", resize: "vertical" }}
         />
       </div>
 
@@ -136,7 +136,7 @@ export default function ContactForm() {
         type="submit"
         disabled={loading}
         className="w-full py-3.5 rounded-xl font-bold text-white transition-all duration-200 hover:scale-[1.02] hover:shadow-glow disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2"
-        style={{ background: "linear-gradient(135deg, #7BA7A0, #6d9b94)" }}
+        style={{ background: "linear-gradient(135deg, #8E6BB0, #55306F)" }}
       >
         {loading ? (
           <>

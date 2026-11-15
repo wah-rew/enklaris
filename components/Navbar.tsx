@@ -2,6 +2,13 @@
 
 import { useState, useEffect } from "react";
 
+const LINKS = [
+  { label: "Use cases", href: "/#use-cases" },
+  { label: "Solutions", href: "/#solutions" },
+  { label: "Industries", href: "/#industries" },
+  { label: "Blog", href: "/blog" },
+];
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,52 +22,35 @@ export default function Navbar() {
   return (
     <nav
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4"
-      style={{ background: "rgba(26,26,46,0.92)", backdropFilter: "blur(16px)", borderBottom: scrolled ? "1px solid rgba(123,167,160,0.1)" : "none" }}
+      style={{ background: "rgba(42,22,56,0.92)", backdropFilter: "blur(16px)", borderBottom: scrolled ? "1px solid rgba(142,107,176,0.1)" : "none" }}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex items-center">
-          <span
-            className="text-2xl font-jakarta font-extrabold tracking-tight"
-            style={{ color: "#7BA7A0" }}
-          >
-            enk
-          </span>
-          <span
-            className="text-2xl font-jakarta font-extrabold tracking-tight"
-            style={{ color: "#FFFFFF" }}
-          >
-            laris
-          </span>
+        <a href="/" className="flex items-center gap-2 text-2xl font-medium tracking-tight text-white">
+          <span className="w-2.5 h-2.5 rounded-full bg-citron" aria-hidden="true" />
+          enklaris
         </a>
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
-          {(["Layanan", "Tentang", "Kontak"] as string[]).map((item) => (
+          {LINKS.map((item) => (
             <a
-              key={item}
-              href={item === "Kontak" ? "/#kontak-form" : `#${item.toLowerCase()}`}
-              className="text-sm font-medium text-white/70 hover:text-celadon transition-colors duration-200"
+              key={item.label}
+              href={item.href}
+              className="text-sm font-medium text-white/70 hover:text-citron transition-colors duration-200"
             >
-              {item}
+              {item.label}
             </a>
           ))}
-          <a
-            href="/blog"
-            className="text-sm font-medium text-white/70 hover:text-celadon transition-colors duration-200"
-          >
-            Blog
-          </a>
         </div>
 
         {/* CTA */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="/#kontak-form"
-            className="px-5 py-2.5 rounded-full text-sm font-semibold text-white transition-all duration-200 hover:scale-105 hover:shadow-md"
-            style={{ background: "linear-gradient(135deg, #C17F5A, #d4956f)" }}
+            href="/#contact"
+            className="px-5 py-2.5 rounded-full text-sm font-semibold text-obsidian bg-white transition-all duration-200 hover:scale-105"
           >
-            Mulai Konsultasi
+            Talk to us
           </a>
         </div>
 
@@ -71,17 +61,17 @@ export default function Navbar() {
           aria-label="Toggle menu"
         >
           <span
-            className={`block w-6 h-0.5 bg-obsidian transition-all duration-300 ${
+            className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
               menuOpen ? "rotate-45 translate-y-2" : ""
             }`}
           />
           <span
-            className={`block w-6 h-0.5 bg-obsidian transition-all duration-300 ${
+            className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
               menuOpen ? "opacity-0" : ""
             }`}
           />
           <span
-            className={`block w-6 h-0.5 bg-obsidian transition-all duration-300 ${
+            className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
               menuOpen ? "-rotate-45 -translate-y-2" : ""
             }`}
           />
@@ -95,30 +85,22 @@ export default function Navbar() {
         }`}
       >
         <div className="glass px-6 py-4 flex flex-col gap-4 border-t border-celadon/10">
-          {(["Layanan", "Tentang", "Kontak"] as string[]).map((item) => (
+          {LINKS.map((item) => (
             <a
-              key={item}
-              href={item === "Kontak" ? "/#kontak-form" : `#${item.toLowerCase()}`}
-              className="text-sm font-medium text-obsidian/80 hover:text-celadon transition-colors"
+              key={item.label}
+              href={item.href}
+              className="text-sm font-medium text-obsidian/80 hover:text-aubergine transition-colors"
               onClick={() => setMenuOpen(false)}
             >
-              {item}
+              {item.label}
             </a>
           ))}
           <a
-            href="/blog"
-            className="text-sm font-medium text-obsidian/80 hover:text-celadon transition-colors"
+            href="/#contact"
+            className="px-5 py-2.5 rounded-lg text-sm font-semibold text-white text-center bg-aubergine transition-all duration-200"
             onClick={() => setMenuOpen(false)}
           >
-            Blog
-          </a>
-          <a
-            href="/#kontak-form"
-            className="px-5 py-2.5 rounded-full text-sm font-semibold text-white text-center transition-all duration-200"
-            style={{ background: "linear-gradient(135deg, #C17F5A, #d4956f)" }}
-            onClick={() => setMenuOpen(false)}
-          >
-            Mulai Konsultasi
+            Talk to us
           </a>
         </div>
       </div>
